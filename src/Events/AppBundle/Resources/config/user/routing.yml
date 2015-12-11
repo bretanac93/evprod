@@ -1,0 +1,41 @@
+app_users_index:
+    path:    /
+    defaults: { _controller: AppBundle:User:index }
+
+app_follow_request:
+    path:     /request
+    defaults: { _controller: AppBundle:User:followRequest }
+    methods:  POST
+
+app_follow_requests:
+    path:     /requests
+    defaults: { _controller: AppBundle:User:followRequests }
+
+app_accept_requests:
+    path:     /ok_request
+    defaults: { _controller: AppBundle:User:acceptRequest }
+    methods:  POST
+
+app_following:
+    path:     /following
+    defaults: { _controller: AppBundle:User:following }
+
+app_followers:
+    path:     /followers
+    defaults:  { _controller: AppBundle:User:followers }
+
+app_user_notifications:
+    path:     /notifications
+    defaults: { _controller: AppBundle:Default:notifications }
+
+app_user_pending:
+    path:     /pending_requests
+    defaults: { _controller: AppBundle:User:pendingRequests }
+
+app_user_notifications_delete:
+    path:     /notification_delete
+    defaults: { _controller: AppBundle:Default:deleteNotifications }
+    methods:  POST
+app_search:
+    path:     /search
+    defaults: { _controller: AppBundle:Default:search }

@@ -1,0 +1,41 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+
+    {% if not app.user %}
+        <h4>Please, <a href="{{ url('fos_user_security_login') }}">login</a> to the system.</h4>
+    {% else %}
+        <div>
+            {% if not app.user.profilepic %}
+                <img src="{{ asset('anonymous.png') }}" width="50px" height="50px"
+                     alt="{{ app.user.username }}_profile_pic"/>
+            {% else %}
+                <img src="{{ asset(app.user.profilepic) }}" width="50px" height="50px" alt="{{ app.user.username }}"/>
+            {% endif %}
+
+            Howdy, {{ app.user.username }}
+        </div>
+        {% for item in entities %}
+
+            {% if not item.profilepic %}
+                <img src="{{ asset('anonymous.png') }}" alt="{{ app.user.username }}_profile_pic"/>
+            {% else %}
+                <img src="{{ asset(item.profilepic) }}" alt="{{ app.user.username }}_profile_pic"/>
+            {% endif %}
+
+
+
+            <form action="{{ url('app_follow_request') }}" method="post">
+
+                <label>{{ item.username }}</label>
+                <input type="hidden" value="{{ item.id }}" name="to_id" id="to_id"/>
+
+                <input type="submit" value="Send Request"/>
+
+            </form>
+
+        {% else %}
+            <h1>Oops, seems like you are the only one registered in the system or you'd sent friend request to every users in the system.</h1>
+        {% endfor %}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,832 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% block page_styles %}
+
+    <link rel="stylesheet" href="{{ asset('public/css/user/user.css') }}"/>
+{% endblock %}
+
+{% block fos_user_content %}
+    {% block profile_resume %}
+        <div class="bgimg text-center" style="background-image: url({{ asset('public/img/beach.png') }})">
+            <div class="main">
+                <img src="{{ asset('public/img/user.png') }}" alt="">
+
+                <h2>Julieta Fuentes</h2>
+                <ul class="list-inline">
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star"></span></li>
+                </ul>
+                <p id="val">1.500 valoraciones</p>
+
+                <p class="text-uppercase">particular</p>
+
+                <p>Usuario desde 20/5/2015</p>
+            </div>
+        </div>
+    {% endblock %}
+
+    {% block rest %}
+        <div class="container-fluid">
+            <div class="visible-xs" id="mobile">
+                <div class="row followers">
+
+                    <ul class="nav nav-tabs text-uppercase text-center">
+                        <li class="active"><a href="#following" data-toggle="tab">sigo</a></li>
+                        <li><a href="#followers" data-toggle="tab">me siguen</a></li>
+                    </ul>
+
+                    <div class="tab-content col-xs-12">
+                        <div class="tab-pane fade in active" id="following">
+                            <ul class="list-inline">
+                                <li class="fuser">
+                                    {# todo: use again desktop generic checkbox #}
+                                    <input type="checkbox">
+                                    <img src="{{ asset('public/img/user.png') }}" alt="">
+
+                                    <p class="name">Sarah</p>
+
+                                    <p class="lastname">Contreras</p>
+                                </li>
+                            </ul>
+
+                            <div class="info">
+                                <h2>Información</h2>
+
+                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusantium
+                                    atque, dolor eaque ex
+                                    nobis obcaecati? Blanditiis eligendi enim est eveniet, fugit ipsam, maxime nulla,
+                                    obcaecati
+                                    perspiciatis quas quod suscipit temporibus.</p>
+
+                                <a href="#" class="text-right">más ...</a>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="followers">me siguen</div>
+                    </div>
+
+                </div>
+
+                <div class="row map striped">
+                    <div class="col-xs-12">
+                        <h3>Centro Parque Costazul</h3>
+                        <h4>Av. Luisa Cáseres de Arismendi, Calle 2, Pampatar. Centro Parqu</h4>
+                        <img class="img-responsive" src="{{ asset('public/img/map.png') }}" alt="">
+                    </div>
+                </div>
+
+                <div class="row collapsed striped">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                        Actividad
+                                        <span class="fa fa-angle-down pull-right"></span>
+                                        <span class="back">volver</span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <div class="panel-body activity">
+                                    <div class="generic">
+
+                                        <img src="{{ asset('public/img/user.png') }}" alt="">
+
+                                        <div class="body">
+                                            <div class="left">
+                                                <p><strong>Sara Contreras</strong></p>
+                                            </div>
+
+                                            <div class="right pull-right">
+                                                <span>25/15/2015</span>
+                                            </div>
+
+                                            <p class="content">
+                                                Ha creado un evento <strong>Fiesta Vaquera</strong>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                        Eventos Subidos
+                                        <span class="fa fa-angle-down pull-right"></span>
+                                        <span class="back">volver</span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body event-up">
+                                    <div class="generic">
+
+                                        <img src="{{ asset('public/img/event.png') }}" alt="">
+
+                                        <div class="body">
+                                            <div class="left">
+                                                <p><a href="#">EVENTO Fiesta Playera</a></p>
+                                            </div>
+
+                                            <div class="right pull-right">
+                                                <span>25/15/2015</span>
+                                            <span class="status on">
+
+                                            </span>
+                                            </div>
+
+                                            <p class="content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam
+                                                commodi consequatur culpa cupiditate deserunt ducimus facere in
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                        Eventos Organizados
+                                        <span class="fa fa-angle-down pull-right"></span>
+                                        <span class="back">volver</span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body event-org">
+                                    <div class="generic">
+
+                                        <img src="{{ asset('public/img/event.png') }}" alt="">
+
+                                        <div class="body">
+                                            <div class="left">
+                                                <p><a href="#">EVENTO Fiesta Playera</a></p>
+                                            </div>
+
+                                            <div class="right pull-right">
+                                                <span>25/15/2015</span>
+                                            <span class="status off">
+
+                                            </span>
+                                            </div>
+
+                                            <p class="content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam
+                                                commodi consequatur culpa cupiditate deserunt ducimus facere in
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                        Eventos Asistidos
+                                        <span class="fa fa-angle-down pull-right"></span>
+                                        <span class="back">volver</span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse">
+                                <div class="panel-body event-ass">
+                                    <div class="generic">
+
+                                        <img src="{{ asset('public/img/event.png') }}" alt="">
+
+                                        <div class="body">
+                                            <div class="left">
+                                                <p><a href="#">EVENTO Fiesta Playera</a></p>
+                                            </div>
+
+                                            <div class="right pull-right">
+                                                <span>25/15/2015</span>
+                                                <span class="status off"></span>
+                                            </div>
+
+                                            <p class="content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam
+                                                commodi consequatur culpa cupiditate deserunt ducimus facere in
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                        Opiniones Enviadas
+                                        <span class="fa fa-angle-down pull-right"></span>
+                                        <span class="back">volver</span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse">
+                                <div class="panel-body opinion">
+                                    <div class="generic">
+
+                                        <img src="{{ asset('public/img/user.png') }}" alt="">
+
+                                        <div class="body">
+                                            <div class="left">
+                                                <p><a href="#">Sara Contreras</a></p>
+                                            </div>
+
+                                            <div class="right pull-right">
+                                                <span>25/15/2015</span>
+                                                <span>4:30pm</span>
+                                            </div>
+
+                                            <p class="content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                                delectus
+                                                doloremque, eius impedit minima modi nobis nostrum odit quaerat
+                                                repellat.
+                                                Dolor dolore iste maiores nostrum obcaecati quam reprehenderit sit ut!
+                                            </p>
+
+                                            <a href="#" class="pull-right">leer más...</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                                        Opiniones Recibidas
+                                        <span class="fa fa-angle-down pull-right"></span>
+                                        <span class="back">volver</span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse">
+                                <div class="panel-body opinion">
+                                    <div class="generic">
+
+                                        <img src="{{ asset('public/img/user.png') }}" alt="">
+
+                                        <div class="body">
+                                            <div class="left">
+                                                <p><a href="#">Sara Contreras</a></p>
+                                            </div>
+
+                                            <div class="right pull-right">
+                                                <span>25/15/2015</span>
+                                                <span>4:30pm</span>
+                                            </div>
+
+                                            <p class="content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                                delectus
+                                                doloremque, eius impedit minima modi nobis nostrum odit quaerat
+                                                repellat.
+                                                Dolor dolore iste maiores nostrum obcaecati quam reprehenderit sit ut!
+                                            </p>
+
+                                            <a href="#" class="pull-right">leer más...</a>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="generic">
+
+                                        <img src="{{ asset('public/img/user.png') }}" alt="">
+
+                                        <div class="body">
+                                            <div class="left">
+                                                <p><a href="#">Sara Contreras</a></p>
+                                            </div>
+
+                                            <div class="right pull-right">
+                                                <span>25/15/2015</span>
+                                                <span>4:30pm</span>
+                                            </div>
+
+                                            <p class="content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                                delectus
+                                                doloremque, eius impedit minima modi nobis nostrum odit quaerat
+                                                repellat.
+                                                Dolor dolore iste maiores nostrum obcaecati quam reprehenderit sit ut!
+                                            </p>
+
+                                            <a href="#" class="pull-right">leer más...</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row social-user striped text-center">
+                    <h4 class="text-uppercase">redes sociales</h4>
+                    <ul class="list-inline">
+                        <li><a href="#"><span class="fa fa-2x fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fa fa-2x fa-facebook"></span></a></li>
+                        <li><a href="#"><span class="fa fa-2x fa-google-plus"></span></a></li>
+                        <li><a href="#"><span class="fa fa-2x fa-pinterest"></span></a></li>
+                        <li><a href="#"><span class="fa fa-2x fa-instagram"></span></a></li>
+                        <li><a href="#"><span class="fa fa-2x fa-flickr"></span></a></li>
+                    </ul>
+                </div>
+
+                <div class="row striped text-uppercase">
+                    <div class="ratings">
+                        <div class="rating"><span>puntualidad</span>
+                            <ul class="list-inline">
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                            </ul>
+                        </div>
+                        <div class="rating"><span>trato</span>
+                            <ul class="list-inline">
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                            </ul>
+                        </div>
+                        <div class="rating"><span>otros</span>
+                            <ul class="list-inline">
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                            </ul>
+                        </div>
+                        <div class="rating"><span>general</span>
+                            <ul class="list-inline">
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                                <li><span class="fa fa-star"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cert text-center">
+                        <p class="text-uppercase">certificaciones y medallas</p>
+                        {#todo: use a font-icon or single image#}
+                        <img src="{{ asset('public/img/medals.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden-xs">
+                <div class="row">
+                    <aside class="col-sm-4 col-md-3">
+                        <div class="row">
+                            <div class="aside-container">
+                                <h5 class="text-uppercase">Información</h5>
+
+                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Accusantium atque, dolor eaque ex nobis obcaecati? <br>
+                                    Blanditiis eligendi enim est eveniet, fugit ipsam, maxime nulla,
+                                    obcaecati
+                                    perspiciatis quas quod suscipit temporibus.</p>
+                            </div>
+                            <div class="arrow">
+                                <span class="fa fa-play"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="aside-container">
+                                <h5 class="pull-right text-uppercase">Madrid</h5>
+                                <img class="img-responsive" src="{{ asset('public/img/map.png') }}" alt="">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="aside-container text-center">
+                                <h5 class="text-uppercase">preferencias</h5>
+                                <ul class="list-inline">
+                                    <li><span class="fa fa-2x fa-anchor"></span></li>
+                                    <li><span class="fa fa-2x fa-music"></span></li>
+                                    <li><span class="fa fa-2x fa-video-camera"></span></li>
+                                    <li><span class="fa fa-2x fa-beer"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row social-user text-center">
+                            <h5 class="text-uppercase">redes sociales</h5>
+                            <ul class="list-inline">
+                                <li><a href="#"><span class="fa fa-2x fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fa fa-2x fa-facebook"></span></a></li>
+                                <li><a href="#"><span class="fa fa-2x fa-google-plus"></span></a></li>
+                                <li><a href="#"><span class="fa fa-2x fa-pinterest"></span></a></li>
+                                <li><a href="#"><span class="fa fa-2x fa-instagram"></span></a></li>
+                                <li><a href="#"><span class="fa fa-2x fa-flickr"></span></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="row text-uppercase">
+                            <div class="ratings aside-container">
+                                <div class="rating"><span>puntualidad</span>
+                                    <ul class="list-inline">
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                    </ul>
+                                </div>
+                                <div class="rating"><span>trato</span>
+                                    <ul class="list-inline">
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                    </ul>
+                                </div>
+                                <div class="rating"><span>otros</span>
+                                    <ul class="list-inline">
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                    </ul>
+                                </div>
+                                <div class="rating"><span>general</span>
+                                    <ul class="list-inline">
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                        <li><span class="fa fa-star"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="cert text-center">
+                                <p class="text-uppercase">certificaciones y medallas</p>
+                                {#todo: use a font-icon or single image#}
+                                <img src="{{ asset('public/img/medals.png') }}" alt="">
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="col-sm-8 col-md-9" id="desktop">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#activities" data-toggle="tab">actividad</a></li>
+                            <li><a href="#events" data-toggle="tab">eventos</a></li>
+                            <li><a href="#reviews" data-toggle="tab">opiniones</a></li>
+                            <li><a href="#followrs" data-toggle="tab">seguidores</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active fade in" id="activities">
+                                <div class="tab-container">
+                                    <div class="generic">
+
+                                        <div class="pic">
+                                            <img src="{{ asset('public/img/user.png') }}" alt="">
+                                        </div>
+
+                                        <div class="body">
+                                            <div class="left">
+                                                <p><strong>Sara Contreras</strong></p>
+                                            </div>
+
+                                            <p>
+                                                <small>25/15/2015</small>
+                                                <small>4:30pm</small>
+                                            </p>
+
+                                            <p class="content">
+                                                Ha creado un evento <strong>Fiesta Vaquera</strong>
+                                            </p>
+
+                                        </div>
+
+                                        <div class="line"></div>
+                                    </div>
+                                    <div class="generic">
+
+                                        <img src="{{ asset('public/img/user.png') }}" alt="">
+
+                                        <div class="body">
+                                            <div class="left">
+                                                <p><strong>Sara Contreras</strong></p>
+                                            </div>
+
+                                            <p>
+                                                <small>25/15/2015</small>
+                                                <small>4:30pm</small>
+                                            </p>
+
+                                            <p class="content">
+                                                Ha creado un evento <strong>Fiesta Vaquera</strong>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="generic">
+
+                                        <img src="{{ asset('public/img/user.png') }}" alt="">
+
+                                        <div class="body">
+                                            <div class="left">
+                                                <p><strong>Sara Contreras</strong></p>
+                                            </div>
+
+                                            <p>
+                                                <small>25/15/2015</small>
+                                                <small>4:30pm</small>
+                                            </p>
+
+                                            <p class="content">
+                                                Ha creado un evento <strong>Fiesta Vaquera</strong>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="generic">
+
+                                        <img src="{{ asset('public/img/user.png') }}" alt="">
+
+                                        <div class="body">
+                                            <div class="left">
+                                                <p><strong>Sara Contreras</strong></p>
+                                            </div>
+
+                                            <p>
+                                                <small>25/15/2015</small>
+                                                <small>4:30pm</small>
+                                            </p>
+
+                                            <p class="content">
+                                                Ha creado un evento <strong>Fiesta Vaquera</strong>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="generic">
+
+                                        <img src="{{ asset('public/img/user.png') }}" alt="">
+
+                                        <div class="body">
+                                            <div class="left">
+                                                <p><strong>Sara Contreras</strong></p>
+                                            </div>
+
+                                            <p>
+                                                <small>25/15/2015</small>
+                                                <small>4:30pm</small>
+                                            </p>
+
+                                            <p class="content">
+                                                Ha creado un evento <strong>Fiesta Vaquera</strong>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="generic">
+
+                                        <img src="{{ asset('public/img/user.png') }}" alt="">
+
+                                        <div class="body">
+                                            <div class="left">
+                                                <p><strong>Sara Contreras</strong></p>
+                                            </div>
+
+                                            <p>
+                                                <small>25/15/2015</small>
+                                                <small>4:30pm</small>
+                                            </p>
+
+                                            <p class="content">
+                                                Ha creado un evento <strong>Fiesta Vaquera</strong>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="generic">
+
+                                        <img src="{{ asset('public/img/user.png') }}" alt="">
+
+                                        <div class="body">
+                                            <div class="left">
+                                                <p><strong>Sara Contreras</strong></p>
+                                            </div>
+
+                                            <p>
+                                                <small>25/15/2015</small>
+                                                <small>4:30pm</small>
+                                            </p>
+
+                                            <p class="content">
+                                                Ha creado un evento <strong>Fiesta Vaquera</strong>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="generic">
+
+                                        <img src="{{ asset('public/img/user.png') }}" alt="">
+
+                                        <div class="body">
+                                            <div class="left">
+                                                <p><strong>Sara Contreras</strong></p>
+                                            </div>
+
+                                            <p>
+                                                <small>25/15/2015</small>
+                                                <small>4:30pm</small>
+                                            </p>
+
+                                            <p class="content">
+                                                Ha creado un evento <strong>Fiesta Vaquera</strong>
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane inner" id="events">
+                                <ul class="nav nav-tabs pull-right">
+                                    <li class="active"><a href="#up" data-toggle="tab">subidos</a></li>
+                                    <li><a href="#org" data-toggle="tab">organizados</a></li>
+                                    <li><a href="#ass" data-toggle="tab">asistidos</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane fade in active" id="up">
+                                        <div class="tab-container">
+                                            <div class="generic">
+
+                                                <img src="{{ asset('public/img/event.png') }}" alt="">
+
+                                                <div class="body">
+                                                    <div class="left">
+                                                        <p><a href="#">EVENTO Fiesta Playera</a></p>
+                                                    </div>
+
+                                                    <div class="right pull-right">
+                                                        <span>25/15/2015</span>
+
+                                                    </div>
+
+                                                    <p class="content">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Aliquid
+                                                        ipsum labore nobis odio odit quia repellat voluptatem.
+                                                        Consequuntur,
+                                                        cumque dolore eligendi enim hic iste molestias, nam
+                                                        necessitatibus
+                                                        perspiciatis praesentium vitae? eligendi enim hic iste
+                                                        molestias,
+                                                        nam necessitatibus perspiciatis praesentium vitae?
+                                                    </p>
+
+                                                    <div class="right pull-right">
+                                                        <span class="status on"></span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="org">...</div>
+                                    <div class="tab-pane fade" id="ass">...</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane inner" id="reviews">
+                                <ul class="nav nav-tabs pull-right">
+                                    <li class="active"><a href="#op-se" data-toggle="tab">opiniones enviadas</a></li>
+                                    <li><a href="#op-re" data-toggle="tab">opiniones recibidas</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane fade in active" id="op-se">
+                                        <div class="tab-container">
+                                            <div class="generic">
+
+                                                <img src="{{ asset('public/img/user.png') }}" alt="">
+
+                                                <div class="body">
+                                                    <div class="left">
+                                                        <p><a href="#">Sara Contreras</a></p>
+                                                    </div>
+
+                                                    <div class="right pull-right">
+                                                        <span>25/15/2015</span>
+                                                        <span>4:30pm</span>
+                                                    </div>
+
+                                                    <p class="content">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Aliquam
+                                                        delectus
+                                                        doloremque, eius impedit minima modi nobis nostrum odit quaerat
+                                                        repellat.
+                                                        Dolor dolore iste maiores nostrum obcaecati quam reprehenderit
+                                                        sit
+                                                        ut!
+                                                    </p>
+
+                                                    <a href="#" class="pull-right">leer más...</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="op-re">...</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane inner" id="followrs">
+                                <ul class="nav nav-tabs pull-right">
+                                    <li class="active"><a href="#follow" data-toggle="tab">sigue</a></li>
+                                    <li><a href="#followed" data-toggle="tab">le siguen</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane fade in active" id="follow">
+                                        <div class="tab-container">
+                                            <div class="generic">
+
+                                                <img src="{{ asset('public/img/user.png') }}" alt="">
+
+                                                <div class="body">
+                                                    <div class="left">
+                                                        <p><a href="#">Sara Contreras</a></p>
+                                                    </div>
+
+                                                    <ul class="list-inline">
+                                                        <li>324 Eventos</li>
+                                                        <li>5362 Siguiendo</li>
+                                                        <li>7200 Seguidores</li>
+                                                    </ul>
+
+                                                    <div class="check">
+                                                        <input type="checkbox" id="fw">
+                                                        <label for="fw">
+                                                        <span>
+                                                            <span></span>
+                                                        </span>
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="followed">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% block footer %}
+                {{ parent() }}
+            {% endblock %}
+
+        </div>
+    {% endblock %}
+
+{% endblock fos_user_content %}
+
+{% block page_scripts %}
+
+    <script src="{{ asset('public/js/user/user.js') }}"></script>
+    <script>
+        $(function () {
+            Events.init();
+            UserPage.init();
+        })
+    </script>
+{% endblock %}
+

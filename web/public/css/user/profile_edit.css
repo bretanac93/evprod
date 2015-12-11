@@ -1,0 +1,29 @@
+.container-fluid {
+  background-color: #83c5df;
+}
+.container-fluid .navbar-mobile {
+  text-align: center;
+}
+.container-fluid .navbar-mobile li {
+  display: inline-block;
+  list-style: none;
+  padding: 3%;
+}
+.container-fluid .navbar-mobile li.active a {
+  color: #007fb4;
+  border-bottom: 1px solid #007fb4;
+}
+.container-fluid .navbar-mobile li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+}
+.upload .upload-spot {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  margin: 10px;
+}
+.account-type .row {
+  margin-top: 20%;
+}

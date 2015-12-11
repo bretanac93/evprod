@@ -1,0 +1,56 @@
+{% extends "UserBundle:Profile:show.html.twig" %}
+
+{% block page_styles %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('public/css/user/profile_edit.css') }}">
+{% endblock %}
+
+{% block fos_user_content %}
+    {% block profile_resume %}
+        {{ parent() }}
+    {% endblock %}
+
+    {% block rest %}
+
+        <div class="container-fluid">
+            <div class="row">
+                <ul class="navbar-mobile">
+                    <li class="active"><a href="#">MI PERFIL</a></li>
+                    <li><a href="#">AMIGOS</a></li>
+                    <li><a href="#">MIS TICKETS</a></li>
+                    <li><a href="#">MIS EVENTOS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <form action="#" method="post">
+                    <div class="row" id="upload-select-account-type">
+                        {# TODO: Upload with picture preview, posted a black square to identify the place instead the of real input. #}
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 upload">
+                                <div class="upload-spot"></div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 account-type">
+                                <div class="row">
+                                    <div>
+                                        <input type="radio" name="particular" id="particular">
+                                        <label for="particular">Particular</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="pro" id="pro">
+                                        <label for="pro">Profesional</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        {% block footer %}
+            {{ parent() }}
+        {% endblock %}
+    {% endblock %}
+{% endblock fos_user_content %}

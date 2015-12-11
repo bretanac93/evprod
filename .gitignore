@@ -1,0 +1,12 @@
+/app/cache/*
+/app/config/parameters.yml
+!app/cache/.gitkeep
+/app/logs/*
+!app/logs/.gitkeep
+/app/phpunit.xml
+/bin/
+/web/uploads/profile
+.idea
+web/public/video
+composer.phar
+vendor
