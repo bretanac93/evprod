@@ -194,7 +194,7 @@ button.swiper-pagination-bullet {
   cursor: pointer;
 }
 .swiper-pagination-white .swiper-pagination-bullet {
-  background: #fff;
+  background: rgba(255,255,255,0.3);
 }
 .swiper-pagination-bullet-active {
   opacity: 1;

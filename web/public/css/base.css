@@ -1,23 +1,51 @@
 @font-face {
-  font-family: 'homemade-apple';
+  font-family: homemade-apple;
   src: url("../fonts/HomemadeApple.ttf") format('truetype');
 }
-body {
-  font-family: "Arial";
+
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: url("../fonts/MyriadPro-Regular.otf");
 }
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: MyriadPro-Regular,Arial;
+}
+
 a,
 a:focus,
 a:active,
-a:hover {
-  outline: none;
-  text-decoration: none !important;
+a:visited,
+a:hover{
+    outline: none;
+    text-decoration: none !important;
 }
+
+/**
+ *OOCSS Class
+**************************************************************/
+.transparent-topbar{
+    background-color: rgba(0,126,177,0.4);
+}
+
+.noTransparent-topbar{
+    background-color: rgba(0,126,177,1);
+}
+
 .topbar {
   width: 100%;
   font-size: 0.9em;
   font-weight: bold;
   padding: 10px 25px;
-  background-color: #007eb1;
+  /*background-color: #007eb1;*/
+
   color: #fff;
   float: right;
   position: fixed;
@@ -137,7 +165,13 @@ footer p {
   margin: 0;
   padding: 10px 0;
   color: #fff;
+    cursor:pointer;
 }
+
+footer p:hover {
+    color: #007eb1;
+}
+
 @media screen and (max-width: 992px) {
   .words {
     text-align: center;
@@ -166,3 +200,507 @@ footer p {
     font-size: x-large !important;
   }
 }
+
+/* estilos del modal subir eventos*/
+.wizard .modal-header{
+    border-bottom: none;
+}
+
+.wizard{
+    font-size: 12px;
+
+}
+
+.wizard ul.nav{
+    background: none repeat scroll 0 0 #0085ba;
+    color: #ffffff;
+}
+
+.wizard .nav-tabs > li > a{
+    border-radius: 0;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px 5px;
+    margin: 0;
+}
+
+.wizard .nav-tabs > li.active > a{
+    color: #000000;
+}
+
+.wizard .nav-tabs > li > a:hover{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.wizard .modal-body{
+    padding: 0;
+    font-size: 12px;
+}
+
+.wizard .tab-content{
+    padding: 15px;
+}
+
+.wizard .row{
+    padding: 0 0 10px 0;
+}
+
+.wizard .row div{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.wizard input[type='text'],
+.wizard textarea{
+    width: 100%;
+}
+
+.wizard textarea{
+    height: 200px;
+}
+
+.wizard input[type='radio']{
+    margin-left: 4px;
+}
+
+.wizard select{
+    width: 70%;
+}
+
+/**
+* footer
+***********************************************************************************************************************/
+footer{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(80, 90, 94);
+    color: #ffffff;
+    padding: 5px 0 5px 0;
+}
+
+/***********************************************************************************************************************
+ * sobreescribiendo estilos de frameworks
+ **********************************************************************************************************************/
+/*
+ * bootstrap
+ **********************************************************************************************************************/
+/* botones */
+.btn,
+.btn-lg,
+.wizard .pager li > a,
+.wizard .pager li > span {
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all all 0.3s;
+    -moz-transition: all all 0.3s;
+    -ms-transition: all all 0.3s;
+    -o-transition: all all 0.3s;
+    transition: all all 0.3s;
+}
+
+.wizard .pager li > a,
+.wizard .pager li > span{
+    background-color: #337ab7;
+    color: #ffffff;
+}
+.wizard .pager li{
+	margin-left:10px;
+}
+
+
+.otherEvents-content > div{
+    white-space:normal !important;
+}
+
+.btn:hover,
+.btn-lg:hover,
+.wizard .pager li > a:hover,
+.wizard .pager li > span:hover {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all all 0.3s;
+    -moz-transition: all all 0.3s;
+    -ms-transition: all all 0.3s;
+    -o-transition: all all 0.3s;
+    transition: all all 0.3s;
+    background-color: #ffffff;
+    color: #003399;
+}
+
+.btn-lg:hover{
+    border: 1px solid #003399;
+}
+
+
+/**********************************************************/
+.btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.btn-fb {
+    background-color: #215bc2;
+    border: 1px solid #215bc2;
+    color: #fff;
+}
+.btn-fb:hover {
+    background-color: #215bc2;
+}
+.btn-tw {
+    background-color: #00bcf2;
+    border: 1px solid #00bcf2;
+    color: #fff;
+}
+.btn-gp {
+    background-color: #ed1c24;
+    border: 1px solid #ed1c24;
+    color: #fff;
+    margin-top: 3%;
+}
+.form-container {
+    margin-left: 7.8%;
+}
+.modal-content {
+    border-radius: 0;
+}
+.modal-content .modal-header {
+    background: #0085ba;
+    text-align: center;
+    color: #fff;
+}
+.modal-content .modal-body .brand {
+    padding: 7%;
+    text-align: center;
+}
+.modal-content .modal-body .login-form .form-container form #remember_div {
+    text-align: left;
+}
+.modal-content .modal-body .login-form .form-container form #forgot_div {
+    text-align: right;
+}
+.modal-content .modal-body .login-form,
+.modal-content .modal-body .register-form {
+    font-size: 14px;
+    color: #a4a9ac;
+}
+.modal-content .modal-body .login-form form .form-group img,
+.modal-content .modal-body .register-form form .form-group img {
+    height: 172px;
+}
+.modal-content .modal-body .login-form form .form-group .btn,
+.modal-content .modal-body .register-form form .form-group .btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.modal-content .modal-body .login-form form .form-group .form-control,
+.modal-content .modal-body .register-form form .form-group .form-control {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid #a4a9ac;
+}
+.modal-content .modal-footer {
+    padding: 4%;
+    background: #d3d3d3;
+}
+.modal-content .modal-footer .footer-option {
+    color: #a0a0a0;
+    text-align: center;
+    font-size: 1.1em;
+}
+.social-buttons {
+    text-align: center;
+    padding: 0;
+}
+.social-buttons .text {
+    margin: 10%;
+    text-align: center;
+}
+.social-buttons .btn {
+    padding: 3.5%;
+    box-shadow: 0;
+}
+.social-buttons .fb {
+    background-color: #215bc2;
+    border: 1px #215bc2 solid;
+}
+.social-buttons .gplus {
+    background-color: #ed1c24;
+    border: 1px #ed1c24 solid;
+    margin-bottom: 1.3%;
+}
+.social-buttons .tw {
+    margin-top: 1.3%;
+    background-color: #00bcf2;
+    border: 1px #00bcf2 solid;
+    margin-bottom: 1.3%;
+}
+.social-buttons .in {
+    margin-top: 0;
+    background-color: #424842;
+    border: 1px #424842 solid;
+}
+.social-button {
+    border-radius: 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .modal-dialog {
+        width: 73.3333%;
+    }
+    .btn-tw {
+        margin-top: 3%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .btn-tw {
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 992px) {
+    .btn-tw {
+        margin-top: 3%;
+    }
+}
+
+/**
+ * estilizando el checkbox
+ **********************************************************************************************************************/
+.checkbox-squared{
+    visibility: hidden;
+}
+
+/* SQUARED FOUR */
+.squared {
+    width: 20px;
+    position: relative;
+}
+
+.squared label {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -5px;
+    right: 0;
+    border-radius: 5px;
+    background-color: rgb(6, 126, 177);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
+
+.squared label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    background: transparent;
+    top: 5px;
+    left: 5px;
+    border: 3px solid #ffffff;
+    border-top: none;
+    border-right: none;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.squared label:hover::after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.5;
+}
+
+.squared input[type=checkbox]:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+/**
+ * redes socioales 2
+ **********************************************************************************************************************/
+.redes-sociales2{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    background-color: rgb(6, 126, 177);
+}
+
+.redes-sociales2 a{
+    display: inline-block;
+    color: rgb(6, 126, 177);
+    font-size: 26px;
+}
+
+.redes-sociales2 span{
+    background: #ffffff;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-right:10px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+}
+
+.redes-sociales2 span:hover{
+    color: #ffffff;
+    background-color: rgb(6, 126, 177);
+}
+
+@media screen and (max-width: 1200px){
+    /**
+   * redes socioales 2
+   *******************************************************************************************************************/
+    .redes-sociales2 a{
+        font-size: 35px;
+    }
+
+    .redes-sociales2 span{
+        margin-right:15px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+/* reseteando estilos para el squared */
+.squared input{
+    margin: 0;
+}
+
+.squared label{
+    top: 0;
+    margin: 0;
+}
+
+
+
+.events > div{
+    margin-top: 15px;
+}
+
+
+/**
+* calendario ficha subir evento
+*/
+.calendario .meses{
+    text-align: center;
+
+}
+
+.calendario .plazas,
+.calendario .dias{
+    text-align: center;
+}
+
+.calendario .plazas,
+.calendario .dias{
+    background-color: #d3d3d3;
+}
+
+.calendario .plazas li,
+.calendario .dias li{
+    display: inline-block;
+}
+
+.calendario .plazas{
+    padding-bottom: 15px;
+}
+
+.calendario .dias{
+    padding-top: 15px;
+}
+
+.calendario h5{
+    margin-top: 0;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.left-row{
+    border-top:10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid rgb(6, 126, 177);
+
+    padding: 0;
+}
+
+.right-row{
+    border-top:10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgb(6, 126, 177);
+    border-right: 10px solid transparent;
+    padding: 0;
+}
+
+.cuadrado-calendario{
+    padding: 4px 10px;
+}
+
+.ubicacion input{
+    width: 30%!important;
+	height:30px;
+	margin:10px 0;
+	padding-left:5px; 
+}
+
+.ubicacion img{
+    width: 100%;
+    height: auto;
+}
+
+/**
+ * OOCSS class
+ *******************************************************************************/
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
+.border-laterales{
+    border-left: 1px solid rgb(76, 82, 67);
+    border-right: 1px solid rgb(76, 82, 67);
+}
+
+/*reescritura del codigo para arreglos */
+.social-login h3{
+    margin: 100px 0 30px 0;
+    border-top:1px solid #d3d3d3;
+    padding-top: 10px;
+
+}
+
+.social-login .form-container{
+    margin-left: 0;
+}
+
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 2px 2px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 2px 2px rgba(104, 197, 255, 0.37), 0px 0px 10px #65a4dd;
+}
+
+

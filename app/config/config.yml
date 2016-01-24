@@ -135,5 +135,5 @@ sonata_admin:
         layout: SonataAdminBundle::standard_layout.html.twig
         ajax: SonataAdminBundle::ajax_layout.html.twig
         list: SonataAdminBundle:CRUD:list.html.twig
-        show: SonataAdminBundle:CRUD:show.html.twig
+        show: SonataAdminBundle:CRUD:event.html.twig
         edit: SonataAdminBundle:CRUD:edit.html.twig

@@ -1,0 +1,1104 @@
+{% extends '::base1.html.twig' %}
+
+ {% block page_styles %}
+     <!-- enlaces propios para la pagina -->
+     <link rel="stylesheet" type="text/css" href="{{ asset('public/plugins/swiper/swiper.css') }}">
+     <link rel="stylesheet" type="text/css" href="{{ asset('public/plugins/datepicker/bootstrap-datepicker.css') }}">
+     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/event/style.css') }}">
+ {% endblock %}
+
+{% block body %}
+    <!-- banner --------------------------------------------------------------------------------------------------->
+    <div class="row visible-xs visible-sm banner">
+        <div class="col-xs-12 col-sm-12 banner-content">
+            <div class="titulo">
+                <span>Circuito todo Terreno</span>
+            </div>
+            <div class="lugar-costo">
+                <div>
+                    <span>Madrid</span>
+                    <span>25/11/2015</span>
+                </div>
+                <div>
+                    <span>25 &euro;</span>
+                    <span>Comparte Gastos</span>
+                </div>
+            </div>
+            <img src="{{ asset('public/img/banner.png') }}" class="img-responsive" />
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!-- asistir -------------------------------------------------------------------------------------------------->
+        <div class="row visible-xs visible-sm asistir">
+            <div class="col-xs-8 col-sm-8 asistir-tiempo">
+                <h6>Quedan 25 horas y 36 minutos</h6>
+                <h6>para adquirir tu ticket</h6>
+            </div>
+            <div class="col-xs-4 col-sm-4 asistir-ok">
+                <a href="#"><h3>Asistir</h3></a>
+            </div>
+        </div>
+
+        <!-- organizadores -------------------------------------------------------------------------------------------->
+        <div class="row visible-xs visible-sm  organizador">
+            <div class="col-xs-6 col-sm-6">
+                <h6>Subido </h6>
+                <img src="{{ asset('public/img/usuario.png') }}">
+                <h6 class="organizador-user">@usuario</h6>
+                <div class="ec-stars-wrapper">
+                    <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                    <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                    <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                    <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                    <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 visible-xs visible-sm">
+                <h6>Subido </h6>
+                <img src="{{ asset('public/img/usuario.png') }}">
+                <h6 class="organizador-user">@usuario</h6>
+                <div class="ec-stars-wrapper">
+                    <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                    <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                    <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                    <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                    <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------
+            para 992 - 1200
+            --------------------------------------------------------------------------------------------------------------->
+        <div class="row visible-md visible-lg first-slider">
+            <div class="col-md-6 col-lg-6 ">
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url({{ asset('public/img/playita.png') }})"></div>
+                        <div class="swiper-slide" style="background-image:url({{ asset('public/img/playita.png') }})"></div>
+                        <div class="swiper-slide" style="background-image:url({{ asset('public/img/playita.png') }})"></div>
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url({{ asset('public/img/playita.png') }})">
+                           <div class="shadow"></div>
+                        </div>
+                        <div class="swiper-slide" style="background-image:url({{ asset('public/img/playita.png') }})">
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="swiper-slide" style="background-image:url({{ asset('public/img/playita.png') }})">
+                            <div class="shadow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 asistiendo">
+                <h3>Excursión a la playa en caravana</h3>
+                <h4>Madrid 25/12/2015</h4>
+                <h1>15 &euro;</h1>
+                <h5>Compartir gastos</h5>
+                <a class="btn btn-primary btn-lg  btn-alargado">ASISTIR</a>
+            </div>
+        </div>
+        <!-- end 992-1200 --------------------------------------------------------------------------------------------->
+
+        <!--descripcion del evento------------------------------------------------------------------------------------->
+        <div class="row evento-descripcion">
+            <div class="col-xs-12 col-sm-12">
+                <h2>Descripción</h2>
+                <p>
+                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a
+                    odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu
+                    ad litora torquent per conubia nostra, per inceptos
+                </p>
+                <a href="#" class="pull-right">más...</a>
+            </div>
+        </div>
+
+        <!--condiciones del evento------------------------------------------------------------------------------------->
+        <div class="row evento-condiciones">
+            <div class="col-xs-12 col-sm-12">
+                <h2>Condiciones</h2>
+                <p>
+                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a
+                    odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu
+                    ad litora torquent per conubia nostra, per inceptos
+                </p>
+                <a href="#" class="pull-right">más...</a>
+            </div>
+        </div>
+
+        <!--mapa------------------------------------------------------------------------------------------------------->
+        <div class="row visible-xs visible-sm evento-mapa">
+            <div class="col-xs-12 col-sm-12">
+                <h3>Centro Parque Costaazul</h3>
+                <h6>Av. Luisa Cáseres de Arismendi, Calle 2, Pampatar.</h6>
+                <img src="{{ asset('public/img/map.png') }}" class="img-responsive" />
+            </div>
+        </div>
+
+        <div class="visible-xs visible-sm">
+            <!--cabeceras del carrusel -->
+            <div class="row visible-xs visible-sm asistentes-invitados">
+                <div class="col-xs-6 col-sm-6 asistentesHeader activo"><h3>ASISTENTES</h3></div>
+                <div class="col-xs-6 col-sm-6 invitadosHeader"><h3>INVITAR AMIGOS</h3></div>
+            </div>
+
+            <!-- slider asistentes -->
+            <div class="row asistentes">
+                <div class="asistentes-viewer">
+                    <ul class="asistentes-content">
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared18" name="check" class="checkbox-squared" />
+                                <label for="squared18"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared2" name="check" class="checkbox-squared" />
+                                <label for="squared2"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared19" name="check" class="checkbox-squared" />
+                                <label for="squared19"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared4" name="check" class="checkbox-squared" />
+                                <label for="squared4"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared5" name="check" class="checkbox-squared" />
+                                <label for="squared5"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared6" name="check" class="checkbox-squared" />
+                                <label for="squared6"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared7" name="check" class="checkbox-squared" />
+                                <label for="squared7"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared8" name="check" class="checkbox-squared" />
+                                <label for="squared8"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- slider invitados -->
+            <div class="row invitados hidden">
+                <div class="invitados-viewer">
+                    <ul class="invitados-content">
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared9" name="check" class="checkbox-squared" />
+                                <label for="squared9"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitarr.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared10" name="check" class="checkbox-squared" />
+                                <label for="squared10"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitarr.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared11" name="check" class="checkbox-squared" />
+                                <label for="squared11"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitarr.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared12" name="check" class="checkbox-squared" />
+                                <label for="squared12"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitarr.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared13" name="check" class="checkbox-squared" />
+                                <label for="squared13"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitarr.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared14" name="check" class="checkbox-squared" />
+                                <label for="squared14"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitarr.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared15" name="check" class="checkbox-squared" />
+                                <label for="squared15"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitarr.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared16" name="check" class="checkbox-squared" />
+                                <label for="squared16"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitarr.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared17" name="check" class="checkbox-squared" />
+                                                         <label for="squared17"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitarr.png') }}">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Botones---------------------------------------------------------------------------------------------------->
+        <div class="row visible-xs ir-reclamar">
+            <div class="col-xs-6 col-sm-6"><a href="#" class="btn btn-primary">Me gustaría ir</a></div>
+            <div class="col-xs-6 col-sm-6"><a href="#" class="btn btn-primary">Reclamar evento</a></div>
+        </div>
+
+        <div class="row visible-sm ir-reclamar">
+            <div class="col-xs-6 col-sm-6"><a href="#" class="btn-lg btn-primary">Me gustaría ir</a></div>
+            <div class="col-xs-6 col-sm-6"><a href="#" class="btn-lg btn-primary">Reclamar evento</a></div>
+        </div>
+
+        <!--------------------------
+         | solo pa 992-1200
+        --------------------------------------------------------------------------------------------------------------->
+        <div class="row visible-md visible-lg">
+            <div class="col-md-6 col-lg-6 asistentesInvitados-md">
+                <div class="col-md-6 col-lg-6 asistentesHeader-md activo-md"><span class="cantidadAsistentes pull-left">27</span><h3 class="pull-left">Asistentes</h3></div>
+                <div class="col-md-6 col-lg-6 invitadosHeader-md"><h3>Invitados</h3></div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 asistentesBody" style="height: 100%">
+
+                        <!--Nota: se debe de tener en cuenta que el "id" del checkbox debe de coincidir con el "for" del label -->
+                        <div class="asistentes-md">
+                            <div>
+                                <img src="{{ asset('public/img/asistente-invitarrr.png') }}">
+                            </div>
+                            <div>
+                                Luis Gutierrez
+                            </div>
+                            <div>
+                                <span class="numero">324</span><span class="descripcion">Eventos</span>
+                                <span class="numero">5372</span><span class="descripcion">Siguiendo</span>
+                                <span class="numero">7200</span><span class="descripcion">Seguidores</span>
+                                <div class="squared pull-right">
+                                    <input type="checkbox" value="None" id="squared1" name="check" class="checkbox-squared" />
+                                    <label for="squared1"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="asistentes-md">
+                            <div>
+                                <img src="{{ asset('public/img/asistente-invitarrr.png') }}">
+                            </div>
+                            <div>
+                                Luis Gutierrez
+                            </div>
+                            <div>
+                                <span class="numero">324</span><span class="descripcion">Eventos</span>
+                                <span class="numero">5372</span><span class="descripcion">Siguiendo</span>
+                                <span class="numero">7200</span><span class="descripcion">Seguidores</span>
+                                <div class="squared pull-right">
+                                    <input type="checkbox" value="None" id="squared1" name="check" class="checkbox-squared" />
+                                    <label for="squared1"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="asistentes-md">
+                            <div>
+                                <img src="{{ asset('public/img/asistente-invitarrr.png') }}">
+                            </div>
+                            <div>
+                                Luis Gutierrez
+                            </div>
+                            <div>
+                                <span class="numero">324</span><span class="descripcion">Eventos</span>
+                                <span class="numero">5372</span><span class="descripcion">Siguiendo</span>
+                                <span class="numero">7200</span><span class="descripcion">Seguidores</span>
+                                <div class="squared pull-right">
+                                    <input type="checkbox" value="None" id="squared20" name="check" class="checkbox-squared" />
+                                    <label for="squared20"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="asistentes-md">
+                            <div>
+                                <img src="{{ asset('public/img/asistente-invitarrr.png') }}">                            </div>
+                            <div>
+                                Luis Gutierrez
+                            </div>
+                            <div>
+                                <span class="numero">324</span><span class="descripcion">Eventos</span>
+                                <span class="numero">5372</span><span class="descripcion">Siguiendo</span>
+                                <span class="numero">7200</span><span class="descripcion">Seguidores</span>
+                                <div class="squared pull-right">
+                                    <input type="checkbox" value="None" id="squared3" name="check" class="checkbox-squared" />
+                                    <label for="squared3"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn pull-right">mas...</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 evento-mapa-md">
+                <h3>Ubicación</h3>
+                <img src="{{ asset('public/img/map.png') }}" class="img-responsive">
+                <h4>Benavides n 14 - Madrid</h4>
+            </div>
+        </div>
+
+        <div class="row visible-md visible-lg" style="background-color: #e8e8e8">
+            <div class="col-md-6 col-ms-6">
+                <div class="row organizador">
+                    <div class="col-md-6 col-ld-6">
+                        <h6>Subido </h6>
+                        <img src="{{ asset('public/img/usuario.png') }}" class="img-responsive">
+                        <h6 class="organizador-user">@usuario</h6>
+                        <div class="ec-stars-wrapper">
+                            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <h6>Subido </h6>
+                        <img src="{{ asset('public/img/usuario.png') }}" class="img-responsive">
+                        <h6 class="organizador-user">@usuario</h6>
+                        <div class="ec-stars-wrapper">
+                            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-ms-6">
+                <!--redes sociales-->
+                <div class="row comparte">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                        Comparte en
+                    </div>
+                    <div class="redes-sociales col-xs-12">
+                        <a href="#"><span><i class="fa fa-twitter"></i></span></a>
+                        <a href="#"><span><i class="fa fa-facebook-f"></i></span></a>
+                        <a href="#"><span><i class="fa fa-google-plus"></i></span></a>
+                        <a href="#"><span><i class="fa fa-pinterest-p"></i></span></a>
+                        <a href="#"><span><i class="fa fa-instagram"></i></span></a>
+                    </div>
+
+
+                </div>
+                <div class="row ir-reclamar">
+                    <div class="col-xs-6 col-sm-6"><a href="#" class="btn-lg btn-primary pull-right">Me gustaría ir</a></div>
+                    <div class="col-xs-6 col-sm-6"><a href="#" class="btn-lg btn-primary pull-left">Reclamar evento</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row visible-md visible-lg">
+            <div class="col-md-12 col-lg-12">
+                <div class="row comentarios">
+                    <div class="col-md-12 col-lg-12">
+                        <span class="cantidadComentarios">4</span><span>COMENTARIOS</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 comentarios-contenedor">
+                        <div class="comentario">
+                            <div>
+                                <img src="{{ asset('public/img/asistente-invitarrr.png') }}">
+                            </div>
+                            <div>
+                                <h3>John Doe</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit
+                                    , nisi elit consequat ipsum, nec sagittis sem nibh ec sagittis sem nibh .
+                                </p>
+                            </div>
+                            <div>
+                                <span class="pull-right">publicado hace 2 semanas</span>
+                            </div>
+                        </div>
+
+                        <div class="comentario">
+                            <div>
+                                <img src="{{ asset('public/img/asistente-invitarrr.png') }}">
+                            </div>
+                            <div>
+                                <h3>John Doe</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+
+                                </p>
+                            </div>
+                            <div>
+                                <span class="pull-right">publicado hace 2 semanas</span>
+                            </div>
+                        </div>
+
+                        <div class="comentario">
+                            <div>
+                                <img src="{{ asset('public/img/asistente-invitarrr.png') }}">
+                            </div>
+                            <div>
+                                <h3>John Doe</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                                </p>
+                            </div>
+                            <div class="sin-borderBottom">
+                                <span class="pull-right">publicado hace 2 semanas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="comentando col-md-12 col-lg-12">
+                        <div>
+                            <img src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </div>
+                        <div><textarea></textarea></div>
+                        <div><a class="btn btn-primary pull-right">Enviar</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row visible-md visible-lg otherViewer2-content">
+            <div class="col-md-1"> <span class="fa fa-3x fa-angle-left pagination-left pull-right"></span></div>
+            <div class="otherEvents2-viewer col-md-10">
+                <div class="event col-md-4 col-lg-4">
+                    <img class="img-responsive" src="{{ asset('public/img/bgm.jpg') }}" alt=""/>
+
+                    <div class="top top-pelicula">
+                        <div class="type pull-left">
+                            <span class="fa fa-film"></span>
+                            <span class="text-uppercase">aventura</span>
+                        </div>
+                            <span class="price pull-right">
+                                &euro; 150
+                            </span>
+                    </div>
+                    <span class="middle">Viaje en globo por Gijón</span>
+
+                    <div class="bottom text-center">
+                        <div class="location pull-left">
+                            <p class="text-uppercase">asturias</p>
+
+                            <p class="text-muted">
+                                <small>26/07/2015</small>
+                            </p>
+                        </div>
+                        <div class="capacity pull-right">
+                            <p class="text-center">30</p>
+
+                            <p class="text-muted text-capitalize">
+                                <small>plazas</small>
+                            </p>
+                        </div>
+                    </div>
+
+                    <span class="shade"></span>
+
+                    <div class="left-bar text-center">
+                        <div class="lgroup" data-toggle="ot">
+                            <p class="fa fa-2x fa-check-square-o"></p>
+                            <p>3</p>
+                        </div>
+                        <div class="lgroup" data-toggle="om">
+                            <p class="fa fa-2x fa-users"></p>
+
+                            <p>78</p>
+                        </div>
+                        <div class="lgroup" data-toggle="ob">
+                            <p class="fa fa-2x fa-share-alt"></p>
+                        </div>
+                    </div>
+                    <a href="#" class="bottom-bar">
+                        <p class="text-center">Asistir al Evento</p>
+                    </a>
+
+                    <div class="ttip ot"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.</p></div>
+                    <div class="ttip om">
+                        <p class="text-center">
+                            <i class="fa fa-angle-left"></i>
+                            <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+                            <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+                            <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+
+                            <i class="fa fa-angle-right"></i>
+                        </p>
+                    </div>
+                    <div class="ttip ob"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.</p></div>
+                </div>
+				
+
+
+
+
+                <div class="event col-md-4 col-lg-4">
+                    <img class="img-responsive" src="{{ asset('public/img/bgm.jpg') }}" alt=""/>
+
+                    <div class="top top-pelicula">
+                        <div class="type pull-left">
+                            <span class="fa fa-film"></span>
+                            <span class="text-uppercase">aventura</span>
+                        </div>
+                            <span class="price pull-right">
+                                &euro; 150
+                            </span>
+                    </div>
+                    <span class="middle">Viaje en globo por Gijón</span>
+
+                    <div class="bottom text-center">
+                        <div class="location pull-left">
+                            <p class="text-uppercase">asturias</p>
+
+                            <p class="text-muted">
+                                <small>26/07/2015</small>
+                            </p>
+                        </div>
+                        <div class="capacity pull-right">
+                            <p class="text-center">30</p>
+
+                            <p class="text-muted text-capitalize">
+                                <small>plazas</small>
+                            </p>
+                        </div>
+                    </div>
+
+                    <span class="shade"></span>
+
+                    <div class="left-bar text-center">
+                        <div class="lgroup" data-toggle="ot">
+                            <p class="fa fa-2x fa-check-square-o"></p>
+                            <p>3</p>
+                        </div>
+                        <div class="lgroup" data-toggle="om">
+                            <p class="fa fa-2x fa-users"></p>
+
+                            <p>78</p>
+                        </div>
+                        <div class="lgroup" data-toggle="ob">
+                            <p class="fa fa-2x fa-share-alt"></p>
+                        </div>
+                    </div>
+                    <a href="#" class="bottom-bar">
+                        <p class="text-center">Asistir al Evento</p>
+                    </a>
+
+                    <div class="ttip ot"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.</p></div>
+                    <div class="ttip om">
+                        <p class="text-center">
+                            <i class="fa fa-angle-left"></i>
+                            <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+                            <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+                            <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+
+                            <i class="fa fa-angle-right"></i>
+                        </p>
+                    </div>
+                    <div class="ttip ob"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.</p></div>
+                </div>
+
+                <div class="event col-md-4 col-lg-4">
+                    <img class="img-responsive" src="{{ asset('public/img/bgm.jpg') }}" alt=""/>
+
+                    <div class="top top-pelicula">
+                        <div class="type pull-left">
+                            <span class="fa fa-film"></span>
+                            <span class="text-uppercase">aventura</span>
+                        </div>
+                            <span class="price pull-right">
+                                &euro; 150
+                            </span>
+                    </div>
+                    <span class="middle">Viaje en globo por Gijón</span>
+
+                    <div class="bottom text-center">
+                        <div class="location pull-left">
+                            <p class="text-uppercase">asturias</p>
+
+                            <p class="text-muted">
+                                <small>26/07/2015</small>
+                            </p>
+                        </div>
+                        <div class="capacity pull-right">
+                            <p class="text-center">30</p>
+
+                            <p class="text-muted text-capitalize">
+                                <small>plazas</small>
+                            </p>
+                        </div>
+                    </div>
+
+                    <span class="shade"></span>
+
+                    <div class="left-bar text-center">
+                        <div class="lgroup" data-toggle="ot">
+                            <p class="fa fa-2x fa-check-square-o"></p>
+                            <p>3</p>
+                        </div>
+                        <div class="lgroup" data-toggle="om">
+                            <p class="fa fa-2x fa-users"></p>
+
+                            <p>78</p>
+                        </div>
+                        <div class="lgroup" data-toggle="ob">
+                            <p class="fa fa-2x fa-share-alt"></p>
+                        </div>
+                    </div>
+                    <a href="#" class="bottom-bar">
+                        <p class="text-center">Asistir al Evento</p>
+                    </a>
+
+                    <div class="ttip ot"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.</p></div>
+                    <div class="ttip om">
+                        <p class="text-center">
+                            <i class="fa fa-angle-left"></i>
+                            <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+                            <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+                            <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+
+                            <i class="fa fa-angle-right"></i>
+                        </p>
+                    </div>
+                    <div class="ttip ob"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.</p></div>
+                </div>
+            </div>
+            <div class="col-md-1"> <span class="fa fa-3x fa-angle-right pagination-right"></span></div>
+
+        </div>
+        <!-- end 992-1200 ----------------------------------------------------------------------------------------------------->
+
+        <!--redes sociales--------------------------------------------------------------------------------------------->
+        <div class="row visible-xs visible-sm comparte">
+            <div class="col-xs-12 col-sm-12 ">
+                Comparte en
+            </div>
+            <div class="col-xs-12 col-sm-12 redes-sociales">
+                <a href="#"><span><i class="fa fa-twitter"></i></span></a>
+                <a href="#"><span><i class="fa fa-facebook-f"></i></span></a>
+                <a href="#"><span><i class="fa fa-google-plus"></i></span></a>
+                <a href="#"><span><i class="fa fa-pinterest-p"></i></span></a>
+                <a href="#"><span><i class="fa fa-instagram"></i></span></a>
+            </div>
+        </div>
+
+        <!-- otherEvents ---------------------------------------------------------------------------------------------->
+        <div class="row otherEvents visible-xs visible-sm">
+            <div class="otherEvents-viewer">
+                <div class="otherEvents-content">
+                    <div class="event">
+                        <img class="img-responsive" src="{{ asset('public/img/bgm.jpg') }}" alt=""/>
+                        <div class="top top-pelicula">
+                            <div class="type pull-left">
+                                <span class="fa fa-film"></span>
+                                <span class="text-uppercase">aventura</span>
+                            </div>
+                            <span class="price pull-right">&euro; 150</span>
+                        </div>
+                        <span class="middle">Viaje en globo por Gijón</span>
+
+                        <div class="bottom text-center">
+                            <div class="location pull-left">
+                                <p class="text-uppercase">asturias</p>
+                                <p class="text-muted"><small>26/07/2015</small></p>
+                            </div>
+                            <div class="capacity pull-right">
+                                <p class="text-center">30</p>
+                                <p class="text-muted text-capitalize"><small>plazas</small></p>
+                            </div>
+                        </div>
+
+                        <span class="shade"></span>
+
+                        <div class="left-bar text-center">
+                            <div class="lgroup" data-toggle="ot">
+                                <p class="fa fa-2x fa-check-square-o"></p>
+                                <p>3</p>
+                            </div>
+                            <div class="lgroup" data-toggle="om">
+                                <p class="fa fa-2x fa-users"></p>
+
+                                <p>78</p>
+                            </div>
+                            <div class="lgroup" data-toggle="ob">
+                                <p class="fa fa-2x fa-share-alt"></p>
+                            </div>
+                        </div>
+                        <a href="#" class="bottom-bar">
+                            <p class="text-center">Asistir al Evento</p>
+                        </a>
+
+                        <div class="ttip ot"><p class="text-center" style="white-space: none !important;">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.</p></div>
+                        <div class="ttip om">
+                            <p class="text-center">
+                                <i class="fa fa-angle-left"></i>
+                                <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+                                <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+                                <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+
+                                <i class="fa fa-angle-right"></i>
+                            </p>
+                        </div>
+                        <div class="ttip ob"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.</p></div>
+                    </div>
+                    <div class="event">
+                        <img class="img-responsive" src="{{ asset('public/img/bgm.jpg') }}" alt=""/>
+                        <div class="top top-pelicula">
+                            <div class="type pull-left">
+                                <span class="fa fa-film"></span>
+                                <span class="text-uppercase">aventura</span>
+                            </div>
+                            <span class="price pull-right">&euro; 150</span>
+                        </div>
+                        <span class="middle">Viaje en globo por Gijón</span>
+
+                        <div class="bottom text-center">
+                            <div class="location pull-left">
+                                <p class="text-uppercase">asturias</p>
+                                <p class="text-muted"><small>26/07/2015</small></p>
+                            </div>
+                            <div class="capacity pull-right">
+                                <p class="text-center">30</p>
+                                <p class="text-muted text-capitalize"><small>plazas</small></p>
+                            </div>
+                        </div>
+
+                        <span class="shade"></span>
+
+                        <div class="left-bar text-center">
+                            <div class="lgroup" data-toggle="ot">
+                                <p class="fa fa-2x fa-check-square-o"></p>
+                                <p>3</p>
+                            </div>
+                            <div class="lgroup" data-toggle="om">
+                                <p class="fa fa-2x fa-users"></p>
+
+                                <p>78</p>
+                            </div>
+                            <div class="lgroup" data-toggle="ob">
+                                <p class="fa fa-2x fa-share-alt"></p>
+                            </div>
+                        </div>
+                        <a href="#" class="bottom-bar">
+                            <p class="text-center">Asistir al Evento</p>
+                        </a>
+
+                        <div class="ttip ot"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.</p></div>
+                        <div class="ttip om">
+                            <p class="text-center">
+                                <i class="fa fa-angle-left"></i>
+                                <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+                                <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+                                <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+
+                                <i class="fa fa-angle-right"></i>
+                            </p>
+                        </div>
+                        <div class="ttip ob"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.</p></div>
+                    </div>
+
+                    <div class="event">
+                        <img class="img-responsive" src="{{ asset('public/img/bgm.jpg') }}" alt=""/>
+                        <div class="top top-pelicula">
+                            <div class="type pull-left">
+                                <span class="fa fa-film"></span>
+                                <span class="text-uppercase">aventura</span>
+                            </div>
+                            <span class="price pull-right">&euro; 150</span>
+                        </div>
+                        <span class="middle">Viaje en globo por Gijón</span>
+
+                        <div class="bottom text-center">
+                            <div class="location pull-left">
+                                <p class="text-uppercase">asturias</p>
+                                <p class="text-muted"><small>26/07/2015</small></p>
+                            </div>
+                            <div class="capacity pull-right">
+                                <p class="text-center">30</p>
+                                <p class="text-muted text-capitalize"><small>plazas</small></p>
+                            </div>
+                        </div>
+
+                        <span class="shade"></span>
+
+                        <div class="left-bar text-center">
+                            <div class="lgroup" data-toggle="ot">
+                                <p class="fa fa-2x fa-check-square-o"></p>
+                                <p>3</p>
+                            </div>
+                            <div class="lgroup" data-toggle="om">
+                                <p class="fa fa-2x fa-users"></p>
+
+                                <p>78</p>
+                            </div>
+                            <div class="lgroup" data-toggle="ob">
+                                <p class="fa fa-2x fa-share-alt"></p>
+                            </div>
+                        </div>
+                        <a href="#" class="bottom-bar">
+                            <p class="text-center">Asistir al Evento</p>
+                        </a>
+
+                        <div class="ttip ot"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.</p></div>
+                        <div class="ttip om">
+                            <p class="text-center">
+                                <i class="fa fa-angle-left"></i>
+                                <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+                                <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+                                <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+
+                                <i class="fa fa-angle-right"></i>
+                            </p>
+                        </div>
+                        <div class="ttip ob"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.</p></div>
+                    </div>
+                    <div class="event">
+                        <img class="img-responsive" src="{{ asset('public/img/bgm.jpg') }}" alt=""/>
+                        <div class="top top-pelicula">
+                            <div class="type pull-left">
+                                <span class="fa fa-film"></span>
+                                <span class="text-uppercase">aventura</span>
+                            </div>
+                            <span class="price pull-right">&euro; 150</span>
+                        </div>
+                        <span class="middle">Viaje en globo por Gijón</span>
+
+                        <div class="bottom text-center">
+                            <div class="location pull-left">
+                                <p class="text-uppercase">asturias</p>
+                                <p class="text-muted"><small>26/07/2015</small></p>
+                            </div>
+                            <div class="capacity pull-right">
+                                <p class="text-center">30</p>
+                                <p class="text-muted text-capitalize"><small>plazas</small></p>
+                            </div>
+                        </div>
+
+                        <span class="shade"></span>
+
+                        <div class="left-bar text-center">
+                            <div class="lgroup" data-toggle="ot">
+                                <p class="fa fa-2x fa-check-square-o"></p>
+                                <p>3</p>
+                            </div>
+                            <div class="lgroup" data-toggle="om">
+                                <p class="fa fa-2x fa-users"></p>
+
+                                <p>78</p>
+                            </div>
+                            <div class="lgroup" data-toggle="ob">
+                                <p class="fa fa-2x fa-share-alt"></p>
+                            </div>
+                        </div>
+                        <a href="#" class="bottom-bar">
+                            <p class="text-center">Asistir al Evento</p>
+                        </a>
+
+                        <div class="ttip ot"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.</p></div>
+                        <div class="ttip om">
+                            <p class="text-center">
+                                <i class="fa fa-angle-left"></i>
+                                <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+                                <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+                                <img class="img-of-event" src="{{ asset('public/img/7/user.png') }}" />
+
+                                <i class="fa fa-angle-right"></i>
+                            </p>
+                        </div>
+                        <div class="ttip ob"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--redes sociales 2------------------------------------------------------------------------------------------->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 redes-sociales2">
+                <a href="#"><span><i class="fa fa-twitter"></i></span></a>
+                <a href="#"><span><i class="fa fa-facebook-f"></i></span></a>
+                <a href="#"><span><i class="fa fa-google-plus"></i></span></a>
+                <a href="#"><span><i class="fa fa-pinterest-p"></i></span></a>
+                <a href="#"><span><i class="fa fa-youtube"></i></span></a>
+                <a href="#"><span><i class="fa fa-instagram"></i></span></a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+        {% block page_scripts %}
+            <script type="text/javascript" src="{{ asset('public/plugins/swiper/swiper.js') }}"></script>
+            <script src="{{ asset('public/plugins/datepicker/bootstrap-datepicker.js') }}"></script>
+            <script src="{{ asset('public/plugins/countTo/jquery.countTo.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('public/js/event/home.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('public/js/event/main.js') }}"></script>
+            <script>
+                var galleryTop = new Swiper('.gallery-top', {
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    spaceBetween: 10
+                });
+                var galleryThumbs = new Swiper('.gallery-thumbs', {
+                    spaceBetween: 10,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    touchRatio: 0.2,
+                    slideToClickedSlide: true
+                });
+                galleryTop.params.control = galleryThumbs;
+                galleryThumbs.params.control = galleryTop;
+
+                $(function () {
+                    Events.init();
+                    HomePage.init();
+                });
+
+            </script>
+
+        {% endblock %}
+

@@ -1,4 +1,4 @@
-{% extends '::base.html.twig' %}
+{% extends '::base1.html.twig' %}
 
 {% block body %}
 
@@ -57,15 +57,17 @@
                         <ul class="list-inline">
                             <li id="go_second" class="item appear" data-from="left">
 
-                                <img src="{{ asset('public/img/3/organize.png') }}"/>
-
-                                <p>sube un evento</p>
-                            </li>
-                            <li class="middle appear" data-from="bottom"></li>
-                            <li id="go_third" class="item appear" data-from="right">
                                 <img src="{{ asset('public/img/3/attend.png') }}"/>
 
                                 <p>asiste a un evento</p>
+                            </li>
+                            <li class="middle appear" data-from="bottom"></li>
+                            <li id="go_third" class="item appear" data-from="right">
+                                <img src="{{ asset('public/img/3/organize.png') }}"/>
+
+                                <p>sube un evento</p>
+
+
                             </li>
                         </ul>
                     </div>
@@ -161,254 +163,6 @@
         <div class="row">
             <div class="col-xs-12 events">
                 <h3 class="visible-xs visible-sm text-uppercase text-center">últimos eventos</h3>
-
-                <div class="event col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <img class="img-responsive" src="{{ asset('public/img/4/bgm.jpg') }}" alt=""/>
-
-                    <div class="top top-pelicula">
-                        <div class="type pull-left">
-                            {#todo: get all activity icons#}
-                            <span class="fa fa-film"></span>
-                            <span class="text-uppercase">aventura</span>
-                        </div>
-                        <span class="price pull-right">
-                            &euro; 150
-                        </span>
-                    </div>
-                    <span class="middle">Viaje en globo por Gijón</span>
-
-                    <div class="bottom text-center">
-                        <div class="location pull-left">
-                            <p class="text-uppercase">asturias</p>
-
-                            <p class="text-muted">
-                                <small>26/07/2015</small>
-                            </p>
-                        </div>
-                        <div class="capacity pull-right">
-                            <p class="text-center">30</p>
-
-                            <p class="text-muted text-capitalize">
-                                <small>plazas</small>
-                            </p>
-                        </div>
-                    </div>
-
-                    <span class="shade"></span>
-
-                    <div class="left-bar text-center">
-                        <div class="lgroup" data-toggle="ot">
-                            <p class="fa fa-2x fa-check-square-o"></p>
-
-                            <p>3</p>
-                        </div>
-                        <div class="lgroup" data-toggle="om">
-                            <p class="fa fa-2x fa-users"></p>
-
-                            <p>78</p>
-                        </div>
-                        <div class="lgroup" data-toggle="ob">
-                            <p class="fa fa-2x fa-share-alt"></p>
-                        </div>
-                    </div>
-                    <a href="#" class="bottom-bar">
-                        <p class="text-center">Asistir al Evento</p>
-                    </a>
-
-                    <div class="ttip ot"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.</p></div>
-                    <div class="ttip om"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.</p></div>
-                    <div class="ttip ob"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.</p></div>
-
-                </div>
-
-                <div class="event col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <img class="img-responsive" src="{{ asset('public/img/4/bgm.jpg') }}" alt=""/>
-
-                    <div class="top top-pelicula">
-                        <div class="type pull-left">
-                            {#todo: get all activity icons#}
-                            <span class="fa fa-film"></span>
-                            <span class="text-uppercase">aventura</span>
-                        </div>
-                        <span class="price pull-right">
-                            &euro; 150
-                        </span>
-                    </div>
-                    <span class="middle">Viaje en globo por Gijón</span>
-
-                    <div class="bottom text-center">
-                        <div class="location pull-left">
-                            <p class="text-uppercase">asturias</p>
-
-                            <p class="text-muted">
-                                <small>26/07/2015</small>
-                            </p>
-                        </div>
-                        <div class="capacity pull-right">
-                            <p class="text-center">30</p>
-
-                            <p class="text-muted text-capitalize">
-                                <small>plazas</small>
-                            </p>
-                        </div>
-                    </div>
-
-                    <span class="shade"></span>
-
-                    <div class="left-bar text-center">
-                        <div class="lgroup" data-toggle="ot">
-                            <p class="fa fa-2x fa-check-square-o"></p>
-
-                            <p>3</p>
-                        </div>
-                        <div class="lgroup" data-toggle="om">
-                            <p class="fa fa-2x fa-users"></p>
-
-                            <p>78</p>
-                        </div>
-                        <div class="lgroup" data-toggle="ob">
-                            <p class="fa fa-2x fa-share-alt"></p>
-                        </div>
-                    </div>
-                    <a href="#" class="bottom-bar">
-                        <p class="text-center">Asistir al Evento</p>
-                    </a>
-
-                    <div class="ttip ot"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.</p></div>
-                    <div class="ttip om"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.</p></div>
-                    <div class="ttip ob"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.</p></div>
-
-                </div>
-
-                <div class="event col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <img class="img-responsive" src="{{ asset('public/img/4/bgm.jpg') }}" alt=""/>
-
-                    <div class="top top-pelicula">
-                        <div class="type pull-left">
-                            {#todo: get all activity icons#}
-                            <span class="fa fa-film"></span>
-                            <span class="text-uppercase">aventura</span>
-                        </div>
-                        <span class="price pull-right">
-                            &euro; 150
-                        </span>
-                    </div>
-                    <span class="middle">Viaje en globo por Gijón</span>
-
-                    <div class="bottom text-center">
-                        <div class="location pull-left">
-                            <p class="text-uppercase">asturias</p>
-
-                            <p class="text-muted">
-                                <small>26/07/2015</small>
-                            </p>
-                        </div>
-                        <div class="capacity pull-right">
-                            <p class="text-center">30</p>
-
-                            <p class="text-muted text-capitalize">
-                                <small>plazas</small>
-                            </p>
-                        </div>
-                    </div>
-
-                    <span class="shade"></span>
-
-                    <div class="left-bar text-center">
-                        <div class="lgroup" data-toggle="ot">
-                            <p class="fa fa-2x fa-check-square-o"></p>
-
-                            <p>3</p>
-                        </div>
-                        <div class="lgroup" data-toggle="om">
-                            <p class="fa fa-2x fa-users"></p>
-
-                            <p>78</p>
-                        </div>
-                        <div class="lgroup" data-toggle="ob">
-                            <p class="fa fa-2x fa-share-alt"></p>
-                        </div>
-                    </div>
-                    <a href="#" class="bottom-bar">
-                        <p class="text-center">Asistir al Evento</p>
-                    </a>
-
-                    <div class="ttip ot"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.</p></div>
-                    <div class="ttip om"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.</p></div>
-                    <div class="ttip ob"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.</p></div>
-
-                </div>
-
-                <div class="event col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <img class="img-responsive" src="{{ asset('public/img/4/bgm.jpg') }}" alt=""/>
-
-                    <div class="top top-pelicula">
-                        <div class="type pull-left">
-                            {#todo: get all activity icons#}
-                            <span class="fa fa-film"></span>
-                            <span class="text-uppercase">aventura</span>
-                        </div>
-                        <span class="price pull-right">
-                            &euro; 150
-                        </span>
-                    </div>
-                    <span class="middle">Viaje en globo por Gijón</span>
-
-                    <div class="bottom text-center">
-                        <div class="location pull-left">
-                            <p class="text-uppercase">asturias</p>
-
-                            <p class="text-muted">
-                                <small>26/07/2015</small>
-                            </p>
-                        </div>
-                        <div class="capacity pull-right">
-                            <p class="text-center">30</p>
-
-                            <p class="text-muted text-capitalize">
-                                <small>plazas</small>
-                            </p>
-                        </div>
-                    </div>
-
-                    <span class="shade"></span>
-
-                    <div class="left-bar text-center">
-                        <div class="lgroup" data-toggle="ot">
-                            <p class="fa fa-2x fa-check-square-o"></p>
-
-                            <p>3</p>
-                        </div>
-                        <div class="lgroup" data-toggle="om">
-                            <p class="fa fa-2x fa-users"></p>
-
-                            <p>78</p>
-                        </div>
-                        <div class="lgroup" data-toggle="ob">
-                            <p class="fa fa-2x fa-share-alt"></p>
-                        </div>
-                    </div>
-                    <a href="#" class="bottom-bar">
-                        <p class="text-center">Asistir al Evento</p>
-                    </a>
-
-                    <div class="ttip ot"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.</p></div>
-                    <div class="ttip om"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.</p></div>
-                    <div class="ttip ob"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.</p></div>
-
-                </div>
 
                 <div class="event col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <img class="img-responsive" src="{{ asset('public/img/4/bgm.jpg') }}" alt=""/>
@@ -1500,6 +1254,58 @@
                                 elit.</p></div>
 
                     </li>
+
+                    <li class="event col-xs-11 col-sm-6 col-md-4">
+                        <img class="img-responsive" src="{{ asset('public/img/4/bgm.jpg') }}" alt=""/>
+
+                        <div class="top top-pelicula">
+                            <div class="type pull-left">
+                                <span class="fa fa-film"></span>
+                                <span class="text-uppercase">aventura</span>
+                            </div>
+                        <span class="price pull-right">
+                            &euro; 150
+                        </span>
+                        </div>
+                        <span class="middle">Viaje en globo por Gijón</span>
+
+                        <div class="bottom text-center">
+                            <div class="location pull-left">
+                                <p class="text-uppercase">asturias</p>
+
+                                <p class="text-muted">
+                                    <small>26/07/2015</small>
+                                </p>
+                            </div>
+                            <div class="capacity pull-right">
+                                <p class="text-center text-uppercase">
+                                    finalizado
+                                </p>
+                            </div>
+                        </div>
+
+                        <span class="shade"></span>
+
+                        <div class="left-bar text-center">
+                            <div class="lgroup" data-toggle="ot">
+                                <p class="fa fa-2x fa-check-square-o"></p>
+
+                                <p>3</p>
+                            </div>
+                            <div class="lgroup" data-toggle="om">
+                                <p class="fa fa-2x fa-users"></p>
+
+                                <p>78</p>
+                            </div>
+                        </div>
+
+                        <div class="ttip ot"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.</p></div>
+                        <div class="ttip om"><p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.</p></div>
+
+                    </li>
+
                     <li class="event col-xs-11 col-sm-6 col-md-4">
                         <img class="img-responsive" src="{{ asset('public/img/4/bgm.jpg') }}" alt=""/>
 
@@ -1614,7 +1420,7 @@
 
                     </figure>
                     <div class="text">
-                        <span class="name pull-left"><stron>Luis Gutiérrez</stron></span>
+                        <span class="name pull-left"><strong>Luis Gutiérrez</strong></span>
                         <span class="date pull-right text-muted"><small>05/12/2015</small></span>
 
                         <p class="text-muted text-justify pull-left">
@@ -1632,7 +1438,7 @@
 
                     </figure>
                     <div class="text">
-                        <span class="name pull-left"><stron>Sara Contreras</stron></span>
+                        <span class="name pull-left"><strong>Sara Contreras</strong></span>
                         <span class="date pull-right text-muted"><small>05/12/2015</small></span>
 
                         <p class="text-muted text-justify pull-left">
@@ -1643,13 +1449,13 @@
                         </p>
                     </div>
                 </div>
-                <div class="comment">
+               <!-- <div class="comment">
                     <figure>
                         <img class="img-responsive" src="{{ asset('anonymous.png') }}" alt="">
 
                     </figure>
                     <div class="text">
-                        <span class="name pull-left"><stron>Luis Gutiérrez</stron></span>
+                        <span class="name pull-left"><strong>Luis Gutiérrez</strong></span>
                         <span class="date pull-right text-muted"><small>05/12/2015</small></span>
 
                         <p class="text-muted text-justify pull-left">
@@ -1659,7 +1465,7 @@
                             </small>
                         </p>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
 
@@ -1714,7 +1520,17 @@
                 </li>
             </ul>
         </div>
-
+        <!--redes sociales 2------------------------------------------------------------------------------------------->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 redes-sociales2">
+                <a href="#"><span><i class="fa fa-twitter"></i></span></a>
+                <a href="#"><span><i class="fa fa-facebook-f"></i></span></a>
+                <a href="#"><span><i class="fa fa-google-plus"></i></span></a>
+                <a href="#"><span><i class="fa fa-pinterest-p"></i></span></a>
+                <a href="#"><span><i class="fa fa-youtube"></i></span></a>
+                <a href="#"><span><i class="fa fa-instagram"></i></span></a>
+            </div>
+        </div>
         {% block footer %}
             {{ parent() }}
         {% endblock %}

@@ -5,6 +5,8 @@
 body {
   font-family: "Arial";
 }
+
+
 a,
 a:focus,
 a:active,
@@ -12,7 +14,7 @@ a:hover {
   outline: none;
   text-decoration: none !important;
 }
-.topbar {
+/*.topbar {
   width: 100%;
   font-size: 0.9em;
   font-weight: bold;
@@ -71,7 +73,7 @@ a:hover {
 .topbar a:nth-child(2),
 .topbar a:last-child {
   margin-top: 3px;
-}
+}*/
 .caret-down {
   display: inline-block;
   width: 0;
@@ -188,7 +190,8 @@ footer p {
   opacity: 1;
 }
 .swiper-pagination-bullet-active {
-  background-color: #11aba1 !important;
+    /*background-color: #11aba1 !important;*/
+    background-color: rgba(17,171,161,0.4) !important;
 }
 [class^=swiper-button] {
   display: none;
@@ -262,7 +265,8 @@ footer p {
 }
 .search button {
   padding: 7px 25px;
-  background-color: #15aca3;
+  /*background-color: #15aca3;*/
+    background-color: rgba(21,172,163,0.4);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -441,7 +445,7 @@ nav .list-wrapper {
   background-image: linear-gradient(180deg, rgba(76,228,190,0.8), rgba(76,228,190,0.8) 60%, transparent);
 }
 .events {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .events:last-child {
   color: #007eb1;
@@ -616,7 +620,7 @@ nav .list-wrapper {
 .palm-trees {
   font-family: homemade-apple;
   background-color: #ededed;
-  padding: 4% 0;
+  padding: 7% 0;
   color: #808080;
   position: relative;
   overflow: hidden;
@@ -1051,6 +1055,15 @@ nav .list-wrapper {
   .first .item {
     padding: 0 17%;
   }
+  
+  @media screen and (max-width: 992px){
+      .first .item {
+          padding: 0 14%;
+      }
+  }
+
+
+  
   .events .event.col-md-4 {
     width: 32.2% !important;
   }
@@ -1083,7 +1096,7 @@ nav .list-wrapper {
   }
   .second .item,
   .third .item {
-    padding: 0 3%;
+    padding: 0 2%;
   }
   .counter h4 {
     margin-left: -8%;
@@ -1091,4 +1104,18 @@ nav .list-wrapper {
   .counter.center h4 {
     margin-left: -30% !important;
   }
+}
+
+
+
+
+/********************************************************************************************************************
+ * REESCRIBIENDO CODIGO
+********************************************************************************************************************/
+.comments h3{
+    font-size: 1.3em;
+}
+
+.done > .list-inline{
+    margin-top: 8.5%;
 }

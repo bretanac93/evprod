@@ -36,4 +36,12 @@ class DefaultController extends Controller
     public function searchAction()
     {
     }
+
+    public function eventAction(){
+      return $this->render('AppBundle:Default:event.html.twig');
+    }
+
+    public function usuarioAction(){
+        return $this->render('AppBundle:Default:usuario.html.twig');
+    }
 }

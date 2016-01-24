@@ -1,0 +1,7 @@
+default:
+    path:     /event
+    defaults: { _controller: "AppBundle:Default:event" }
+
+usuario:
+    path:     /usuario
+    defaults: { _controller: "AppBundle:Default:usuario" }

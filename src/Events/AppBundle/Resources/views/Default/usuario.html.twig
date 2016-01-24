@@ -1,0 +1,526 @@
+{% extends '::base1.html.twig' %}
+
+ {% block page_styles %}
+     <!-- enlaces propios para la pagina -->
+     <link rel="stylesheet" type="text/css" href="{{ asset('public/plugins/swiper/swiper.css') }}">
+     <link rel="stylesheet" type="text/css" href="{{ asset('public/plugins/datepicker/bootstrap-datepicker.css') }}">
+     <link rel="stylesheet" type="text/css" href="{{ asset('public/css/usuario/style.css') }}">
+ {% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+
+        <!--banner-->
+        <div class="row">
+            <div class="banner col-xs-12">
+                <div class="avatar-perfil">
+                    <img src="{{ asset('public/img/usuario-femenino.png') }}">
+                    <h2>Julieta Fuentes</h2>
+                    <div class="ec-stars-wrapper">
+                        <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                        <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                        <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                        <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                        <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                    </div>
+                    <h5 class="valoraciones">1.500 Valoraciones</h5>
+                    <h4 class="tipo">Particuar</h4>
+                    <h5 class="fecha-perfil">Usuario desde 20/05/2015</h5>
+                </div>
+                <img src="{{ asset('public/img/beach1.png') }}" class="img-responsive background-perfil">
+            </div>
+        </div>
+
+        <!--seguidores-->
+        <div>
+            <div class="row seguidores-headers">
+                <div class="col-xs-4 sigueHeader activo">Sigue</div>
+                <div class="col-xs-4 siguenHeader border-laterales">Le siguen</div>
+                <div class="col-xs-4 proximosHeader">Proximos</div>
+            </div>
+
+            <!-- slider sigue -->
+            <div class="row seguidores sigue">
+                <div class="seguidores-viewer">
+                    <ul class="seguidores-content">
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared18" name="check" class="checkbox-squared" />
+                                <label for="squared18"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared2" name="check" class="checkbox-squared" />
+                                <label for="squared2"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared19" name="check" class="checkbox-squared" />
+                                <label for="squared19"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared4" name="check" class="checkbox-squared" />
+                                <label for="squared4"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared5" name="check" class="checkbox-squared" />
+                                <label for="squared5"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared6" name="check" class="checkbox-squared" />
+                                <label for="squared6"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared7" name="check" class="checkbox-squared" />
+                                <label for="squared7"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared8" name="check" class="checkbox-squared" />
+                                <label for="squared8"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- slider siguen -->
+            <div class="row seguidores siguen hidden">
+                <div class="seguidores-viewer">
+                    <ul class="seguidores-content">
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared18" name="check" class="checkbox-squared" />
+                                <label for="squared18"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared2" name="check" class="checkbox-squared" />
+                                <label for="squared2"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared19" name="check" class="checkbox-squared" />
+                                <label for="squared19"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared4" name="check" class="checkbox-squared" />
+                                <label for="squared4"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared5" name="check" class="checkbox-squared" />
+                                <label for="squared5"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared6" name="check" class="checkbox-squared" />
+                                <label for="squared6"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared7" name="check" class="checkbox-squared" />
+                                <label for="squared7"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared8" name="check" class="checkbox-squared" />
+                                <label for="squared8"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- slider proximos -->
+            <div class="row seguidores proximos hidden">
+                <div class="seguidores-viewer">
+                    <ul class="seguidores-content">
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared18" name="check" class="checkbox-squared" />
+                                <label for="squared18"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared2" name="check" class="checkbox-squared" />
+                                <label for="squared2"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared19" name="check" class="checkbox-squared" />
+                                <label for="squared19"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared4" name="check" class="checkbox-squared" />
+                                <label for="squared4"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared5" name="check" class="checkbox-squared" />
+                                <label for="squared5"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared6" name="check" class="checkbox-squared" />
+                                <label for="squared6"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared7" name="check" class="checkbox-squared" />
+                                <label for="squared7"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                        <li>
+                            <div class="squared">
+                                <input type="checkbox" value="None" id="squared8" name="check" class="checkbox-squared" />
+                                <label for="squared8"></label>
+                            </div>
+                            <div class="datos">
+                                <span>Sara</span>
+                                <span>Contreras</span>
+                            </div>
+                            <img class="img-responsive" src="{{ asset('public/img/asistente-invitar.png') }}">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!--informacion-->
+        <div class="row">
+            <div class="col-xs-12 informacion">
+                <h3>Información</h3>
+                <p>
+                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a
+                    odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu
+                    ad litora torquent per conubia nostra, per inceptos
+                </p>
+                <a href="#" class="pull-right">más...</a>
+            </div>
+        </div>
+
+        <!--mapa-->
+        <div class="row mapa">
+            <div class="col-xs-12 col-sm-12">
+                <h3>Centro Parque Costaazul</h3>
+                <h5>Av. Luisa Cáseres de Arismendi, Calle 2, Pampatar.</h5>
+                <img src="{{ asset('public/img/map.png') }}" class="img-responsive" />
+            </div>
+        </div>
+
+        <!--actividades-->
+        <div class="row actividades">
+            <div class="col-xs-12">
+                <ul>
+                    <li>
+                        Atividad
+                        <span class="squared pull-right">
+                            <input type="checkbox" value="None" id="squared18" name="check" class="checkbox-squared" />
+                            <label for="squared18"></label>
+                        </span>
+                    </li>
+                    <li>
+                        Eventos Subidos
+                        <span class="squared pull-right">
+                            <input type="checkbox" value="None" id="squared18" name="check" class="checkbox-squared" />
+                            <label for="squared18"></label>
+                        </span>
+                    </li>
+                    <li>
+                        Eventos Organizados
+                        <span class="squared pull-right">
+                            <input type="checkbox" value="None" id="squared18" name="check" class="checkbox-squared" />
+                            <label for="squared18"></label>
+                        </span>
+                    </li>
+                    <li>
+                        Eventos Asistidos
+                        <span class="squared pull-right">
+                            <input type="checkbox" value="None" id="squared18" name="check" class="checkbox-squared" />
+                            <label for="squared18"></label>
+                        </span>
+                    </li>
+                    <li>
+                        Openiones Enviadas
+                        <span class="squared pull-right">
+                            <input type="checkbox" value="None" id="squared18" name="check" class="checkbox-squared" />
+                            <label for="squared18"></label>
+                        </span>
+                    </li>
+                    <li>
+                        Opiniones Recibidas
+                        <span class="squared pull-right">
+                            <input type="checkbox" value="None" id="squared18" name="check" class="checkbox-squared" />
+                            <label for="squared18"></label>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--redes sociales--------------------------------------------------------------------------------------------->
+        <div class="row redes-sociales">
+            <div class="col-xs-12 col-sm-12 ">
+                <h3>Redes Sociales</h3>
+                <a href="#"><span class="fa fa-twitter"></span></a>
+                <a href="#"><span class="fa fa-facebook-f"></span></a>
+                <a href="#"><span class="fa fa-google-plus"></span></a>
+                <a href="#"><span class="fa fa-pinterest-p"></span></a>
+                <a href="#"><span class="fa fa-instagram"></span></a>
+            </div>
+        </div>
+
+    <!--preferencias-->
+    <div class="row preferencias">
+        <div class="col-xs-12 col-sm-12">
+            <h3>Preferencias</h3>
+            <a href="#"><span class="fa fa-music"></span></a>
+            <a href="#"><span class="fa fa-cutlery"></span></a>
+            <a href="#"><span class="fa fa-music"></span></a>
+        </div>
+    </div>
+
+    <!--general-->
+    <div class="row general">
+        <div class="col-xs-12">
+            <ul>
+                <li>
+                    Puntualidad
+                    <div class="ec-stars-wrapper pull-right">
+                        <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                        <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                        <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                        <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                        <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                    </div>
+                </li>
+                <li>
+                    Puntualidad
+                    <div class="ec-stars-wrapper pull-right">
+                        <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                        <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                        <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                        <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                        <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                    </div>
+                </li>
+                <li>
+                    Puntualidad
+                    <div class="ec-stars-wrapper pull-right">
+                        <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                        <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                        <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                        <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                        <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                    </div>
+                </li>
+                <li>
+                    Puntualidad
+                    <div class="ec-stars-wrapper pull-right">
+                        <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                        <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                        <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                        <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                        <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--medallas-->
+    <div class="row medallas">
+        <div class="col-xs-12">
+            <h3>Certificaciones y Medallas</h3>
+            <a href="#"><span class="fa fa-asterisk"></span></a>
+            <a href="#"><span class="fa fa-asterisk"></span></a>
+            <a href="#"><span class="fa fa-asterisk"></span></a>
+            <a href="#"><span class="fa fa-asterisk"></span></a>
+            <a href="#"><span class="fa fa-asterisk"></span></a>
+            <a href="#"><span class="fa fa-asterisk"></span></a>
+        </div>
+    </div>
+
+    </div><!--container fluid-->
+
+
+
+    {% block page_scripts %}
+        <script type="text/javascript" src="{{ asset('public/plugins/swiper/swiper.js') }}"></script>
+        <script src="{{ asset('public/plugins/datepicker/bootstrap-datepicker.js') }}"></script>
+        <script src="{{ asset('public/plugins/countTo/jquery.countTo.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/js/event/home.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('public/js/usuario/main.js') }}"></script>
+        <script>
+           /* var galleryTop = new Swiper('.gallery-top', {
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                spaceBetween: 10
+            });
+            var galleryThumbs = new Swiper('.gallery-thumbs', {
+                spaceBetween: 10,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                touchRatio: 0.2,
+                slideToClickedSlide: true
+            });
+            galleryTop.params.control = galleryThumbs;
+            galleryThumbs.params.control = galleryTop;
+
+            $(function () {
+                Events.init();
+                HomePage.init();
+            });
+*/
+            $(function(){
+                $('.seguidores-content').perfectScrollbar();
+            });
+        </script>
+
+    {% endblock %}
+{% endblock %}

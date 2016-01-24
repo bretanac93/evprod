@@ -1,0 +1,1867 @@
+/** Estilos generales *************************************************************************************************/
+
+body{
+    background-color: rgb(211,211,211);
+    color: #000000;
+}
+
+.container-fluid{
+    background-color: #808080;
+    margin-top: 127%;
+}
+
+/**
+* banner
+***********************************************************************************************************************/
+.banner{
+    color: #ffffff;
+    text-shadow: 4px 2px 7px #000000;
+    margin-left: 0;
+}
+
+.banner-content{
+    padding: 0;
+    margin-top: 45px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: -9999;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.banner-content > div{
+    position: absolute;
+    margin-top: 0.3em;
+    margin-left: 0.2em;
+}
+
+.banner .titulo{
+    font-size: 1.375em;
+
+}
+
+.banner .lugar-costo{
+    top: 86%;
+    width: 100%;
+}
+
+.banner .lugar-costo > div{
+    width: 50%;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+.banner .lugar-costo > div > span{
+    display: block;
+}
+
+.banner .lugar-costo > div > span:first-child{
+    font-size: 20px;
+}
+
+.banner .lugar-costo > div > span:last-child{
+    font-size: 14px;
+    margin-top: -8px;
+}
+
+/**
+ * asistir
+ **********************************************************************************************************************/
+.asistir{
+
+    height: 70px;
+    background-color: rgb(104, 184, 191);
+    color: #000000;
+}
+
+.asistir-tiempo{
+    padding: 10px 0 0 0;
+    text-align: center;
+
+}
+
+.asistir-tiempo > h6{
+    font-weight: bold;
+    font-size: 11px;
+}
+
+/* para subir un poco mas el h6 de abajo*/
+.asistir-tiempo > h6:last-child{
+    margin-top: -8px;
+}
+
+.asistir-ok h3{
+    font-weight: bold;
+    font-size: 26px;
+    text-align: left;
+    color: #000000;
+    margin-left: -10px;
+}
+
+/**
+ * organizador
+ **********************************************************************************************************************/
+.organizador{
+    background-color: #ffffff;
+}
+
+.organizador h6{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.organizador > div{
+    text-align: center;
+}
+
+.organizador img{
+    margin: -8px 0 -8px 0;
+}
+
+.organizador > div > h6:first-child{
+    color: rgb(6, 126, 177);
+    font-weight: bold;
+    margin-left: -12px;
+}
+
+.ec-stars-wrapper {
+    margin-top: -15px;
+    font-size: 0;
+    display: inline-block;
+}
+.ec-stars-wrapper a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    color: #888;
+}
+
+.ec-stars-wrapper a:nth-child(1),
+.ec-stars-wrapper a:nth-child(2),
+.ec-stars-wrapper a:nth-child(3){
+    color: rgb(6, 126, 177);
+}
+
+/**
+  * primer slider para 992-1200
+  *********************************************************************************************/
+.first-slider{
+    margin-top: 55px;
+}
+
+.first-slider > div:first-child{
+    position: relative;
+    height: 310px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+.gallery-top {
+    height: 100%;
+    width: 100%;
+}
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 1; /* esta es la de las imagenes pequeñas */
+}
+.gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+}
+
+/**
+* asistiendo
+***********************************************************************************************************************/
+.asistiendo{
+    text-align: center;
+    padding: 40px 15px;
+}
+
+.asistiendo h3{
+    color: rgb(6, 126, 177);
+}
+
+.asistiendo h4{
+    color: #000000;
+}
+
+.asistiendo h1{
+    color: rgb(6, 126, 177);
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.asistiendo a{
+    margin-top: 30px;
+}
+
+.btn-alargado{
+    padding: 10px 50px 10px 50px;
+}
+
+/**
+ * evento: descripcion,condiciones, mapa
+ **********************************************************************************************************************/
+.evento-condiciones{
+    margin-bottom: 1%;
+}
+
+.evento-descripcion,
+.evento-condiciones,
+.evento-mapa,
+.asistentes-invitados{
+    background-color: #ffffff;
+    margin-top: 1%;
+    padding: 0;
+}
+
+.evento-descripcion h2,
+.evento-condiciones  h2,
+.evento-mapa h3{
+    color: rgb(6, 126, 177);
+}
+
+.evento-descripcion p,
+.evento-condiciones p{
+    text-align: justify;
+    font-size: 11px;
+}
+
+.evento-descripcion a,
+.evento-condiciones a{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.evento-mapa img{
+    margin: 0 15px 10px 0;
+    width: 100%;
+}
+
+/**
+ * asistentes-invitados, otherEvents
+ **********************************************************************************************************************/
+/* header */
+.asistentes-invitados{
+    margin-top: 3%;
+}
+
+.asistentesHeader,
+.invitadosHeader{
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    background-color: rgb(172,172,172);
+    color: rgb(139,139,139);
+    font-weight: bold;
+}
+
+.asistentesHeader h3,
+.invitadosHeader h3{
+    font-size: 14px;
+    margin: 10px 0 0 0;
+}
+
+.activo{
+    color: rgb(6, 126, 177);
+    background-color: #ffffff !important;
+}
+
+/** slider **/
+.asistentes,
+.invitados,
+.otherEvents{
+    padding: 0 10px 0 10px;
+    background-color: #ffffff;
+}
+
+.asistentes-viewer,
+.invitados-viewer,
+.otherEvents-viewer{
+    background-color: #ffffff;
+    padding: 5px 0 10px 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-shadow: 4px 2px 7px #000000;
+    color: #ffffff;
+}
+
+.asistentes-content,
+.invitados-content,
+.otherEvents-content{
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.asistentes-content > li,
+.invitados-content > li,
+.otherEvents-content .col-xs-6{
+    display: inline-block;
+    margin: 0 5px 0 0;
+    position: relative;
+}
+
+
+.asistentes-content .squared,
+.asistentes-content .datos,
+.invitados-content .squared,
+.invitados-content .datos{
+    position: absolute;
+}
+
+.asistentes-content .squared,
+.invitados-content .squared{
+    margin-left: 75%;
+    top: 7px;
+    right: 1px;
+}
+
+.asistentes-content .datos,
+.invitados-content .datos{
+    color: #ffffff;
+    text-shadow: 4px 2px 7px #000000;
+    text-align: right;
+    font-size: 9px;
+    right: 5%;
+    top: 67%;
+}
+
+.asistentes-content .datos > span,
+.invitados-content .datos > span{
+    display: block;
+}
+
+/**
+ * ir reclamar (botones)
+***********************************************************************************************************************/
+.ir-reclamar{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 5px 5px 10px 5px;
+}
+
+/**
+ * comentarios
+ **********************************************************************************************************************/
+.cantidadComentarios{
+    background-color: rgb(6, 126, 177);
+    border-radius: 2em;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    color: #ffffff;
+    display: inline-block;
+    /* font-weight: bold;*/
+    font-size: 16px;
+    line-height: 1.8em;
+    margin-right: 15px;
+    text-align: center;
+    width: 29px;
+    height: 28px;
+}
+
+.comentarios > div:first-child{
+    padding: 20px;
+}
+
+.comentarios > div:first-child > span:last-child{
+    font-size: 18px;
+    color: rgb(6, 126, 177);
+}
+
+/* el comentario en si */
+.comentario div{
+    position: relative;
+    float: left;
+	padding-left:10px;
+}
+
+.comentario > div:nth-child(1){
+    width: 4.22%;
+    padding-left: 2px;
+    height: 100%;
+}
+
+.comentario h3{
+    margin: 2px 0 0 0;
+    font-size: 18px;
+    color: rgb(6, 126, 177);
+}
+
+.comentario p{
+    text-align: justify;
+    font-size: 16px;
+}
+
+.comentario > div:nth-child(2) ,
+.comentario > div:nth-child(3){
+    width: 93.78%;
+    padding: 0 10px;
+}
+
+.comentario > div:nth-child(4){
+    width: 100%;
+    border-bottom: 1px solid darkgray;
+    margin-bottom: 5px;
+}
+
+.sin-borderBottom{
+    border-bottom: none!important;
+}
+
+.comentario span{
+    font-size: 16px;
+    color: darkgrey;
+    margin-top: -10px;
+}
+
+.comentario img{
+    width: 44px;
+    height: 40px;
+	margin-left:10px;
+}
+
+.comentarios-contenedor{
+	border-left:1px solid grey;
+	padding-left:0;
+}
+
+.comentarios-contenedor > div{
+	overflow:hidden;
+}
+
+/* comentando */
+.comentando{
+    padding: 10px 10px 5px 3px;
+    height: 102px;
+    background-color: #e8e8e8;
+	margin-top:20px;
+}
+
+.comentando > div{
+    float: left;
+}
+
+.comentando > div:nth-child(1){
+    width: 10%;
+    padding: 0 10px 0 5px;
+}
+
+.comentando > div:nth-child(2),
+.comentando > div:nth-child(3){
+    width: 89%;
+    height: 50%;
+}
+
+.comentando textarea{
+    width: 70%;
+    height: 100%;
+}
+
+.comentando > div:nth-child(3){
+    margin-top: 5px;
+    width: 62%
+}
+
+/**
+ * redes sociales
+ **********************************************************************************************************************/
+.comparte{
+    background-color: #ffffff;
+}
+
+.comparte > div:first-child{
+    text-align: center;
+    color: rgb(6, 126, 177);
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+.redes-sociales{
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.redes-sociales a{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.redes-sociales span{
+    background: #808080;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 39px;
+    height: 38px;
+}
+
+.redes-sociales span:hover{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all all 0.3s;
+    -moz-transition: all all 0.3s;
+    -ms-transition: all all 0.3s;
+    -o-transition: all all 0.3s;
+    transition: all all 0.3s;
+    background-color: rgb(6, 126, 177);
+
+}
+
+/*
+ *event1
+ ***********************************************************************************************************************
+
+    nota: ya este codigo existe en el css home pero como hay conflicto en algunos estilos y con el fin de tocar lo ya echo
+            entonces es mejor repetir una porcion de codigo y no hacer referencia a home  para la visualizacion de las paginas que cargan estos estilos
+*/
+
+.event {
+    /* position: relative;*/
+    -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -ms-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 5px;
+    font-size: large;
+    display: inline-block;
+}
+
+.event .top-pelicula {
+    background-image: -webkit-linear-gradient(180deg, rgba(76,228,190,0.8), rgba(76,228,190,0.8) 60%, transparent);
+    background-image: -moz-linear-gradient(180deg, rgba(76,228,190,0.8), rgba(76,228,190,0.8) 60%, transparent);
+    background-image: -ms-linear-gradient(180deg, rgba(76,228,190,0.8), rgba(76,228,190,0.8) 60%, transparent);
+    background-image: -o-linear-gradient(180deg, rgba(76,228,190,0.8), rgba(76,228,190,0.8) 60%, transparent);
+    background-image: linear-gradient(180deg, rgba(76,228,190,0.8), rgba(76,228,190,0.8) 60%, transparent);
+}
+
+.event .top {
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2% 2% 3%;
+    color: #fff;
+}
+
+.event .location > p:first-child,
+.event .capacity > p:first-child{
+    color: rgb(6, 126, 177);
+    text-shadow: none;
+}
+
+.event .location > p:last-child,
+.event .capacity > p:last-child{
+    color: darkgray;
+    text-shadow: none;
+    padding-top: 4px;
+}
+
+.event .middle {
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: 2%;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    font-stretch: ultra-condensed;
+    font-size: larger;
+    opacity: 1;
+}
+.event .bottom {
+    padding: 0 4%;
+}
+.event .bottom p {
+    margin: 0;
+    padding: 0;
+}
+.event .bottom .location p:first-child,
+.event .bottom .capacity p:first-child {
+    font-size: larger;
+    font-weight: bold;
+}
+.event .bottom .location p:last-child,
+.event .bottom .capacity p:last-child {
+    margin-top: -10px;
+}
+.event .left-bar,
+.event .bottom-bar {
+    position: absolute;
+    left: 0;
+    color: #fff;
+    z-index: 45;
+}
+.event .left-bar {
+    padding-top: 5%;
+    top: 0;
+    background-color: #007eb1;
+    width: 52px;
+    height: 100%;
+}
+.event .left-bar .lgroup {
+    height: 30%;
+}
+.event .left-bar p:nth-child(2n) {
+    margin-top: -3px;
+    padding-bottom: 1%;
+}
+.event .left-bar p:nth-child(2n+1) {
+    margin-bottom: 0;
+}
+.event .bottom-bar {
+    bottom: 0;
+    background-color: #15aca3;
+    width: 100%;
+    height: 52px;
+    font-size: larger;
+    padding-top: 8px;
+}
+.event .ttip {
+    background-color: #fff;
+    position: absolute;
+    left: 75px;
+    width: 70%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 60;
+    opacity: 0;
+}
+.event .ttip:before {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 15px solid #fff;
+    position: absolute;
+    top: 38%;
+    left: -15px;
+}
+.event .ttip p {
+    color: #000;
+    font-size: smaller;
+    margin: 0;
+    padding: 3px;
+}
+.event .ttip.working {
+    opacity: 1;
+}
+.event .ot {
+    top: 4%;
+}
+.event .om {
+    top: 34%;
+
+    /*estilizando iconos*/
+    font-size: 34px;
+}
+
+.event .om i{
+    padding: 0 5px 0 5px;
+}
+
+.event .ob {
+    top: 64%;
+}
+.event .shade,
+.event .left-bar,
+.event .bottom-bar {
+    opacity: 0;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.event.active .top,
+.event.active .middle {
+    opacity: 0;
+}
+.event.active .shade,
+.event.active .left-bar,
+.event.active .bottom-bar {
+    opacity: 1;
+}
+.event.active .left-bar {
+    z-index: 51;
+}
+.event.active .bottom-bar {
+    z-index: 52;
+}
+
+.event .fa{
+    cursor: pointer;
+}
+
+.pagination-left,
+.pagination-right{
+    margin-top: 150%;
+    font-size: 50px;
+    display: block;
+    cursor: pointer;
+}
+
+/**
+ * redes socioales 2
+ **********************************************************************************************************************/
+.redes-sociales2{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    background-color: rgb(6, 126, 177);
+}
+
+.redes-sociales2 a{
+    display: inline-block;
+    color: rgb(6, 126, 177);
+    font-size: 26px;
+}
+
+.redes-sociales2 span{
+    background: #ffffff;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-right:10px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+}
+
+.redes-sociales2 span:hover{
+    color: #ffffff;
+    background-color: rgb(6, 126, 177);
+}
+
+/**
+ * ayuda
+ **********************************************************************************************************************/
+.ayuda{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(6, 126, 177);
+    background-color: #ffffff;
+}
+
+.ayuda h3{
+    margin: 15px 0 5px 0;
+}
+
+.chat{
+    float: inherit;
+    background-color: #ffffff;
+    padding-bottom: 15px;
+}
+
+.chat img{
+    margin: auto;
+    padding: 0;
+    cursor: pointer;
+}
+
+/**
+* ayuda
+**********************************************************************************************************************/
+.last {
+    color: #007eb1;
+   /* padding: 30px 0 20px;*/
+    background-color: #fff;
+    padding: 0 0 10px 0;
+}
+
+.last .words{
+    margin-top: 20px;
+}
+
+.last .words .col-md-4 {
+    padding-left: 5%;
+}
+.last .words p {
+    color: #9c9c9c;
+    font-size: 18px;
+}
+
+.last .words > div:not(:last-of-type) {
+    /*border-right: 3px solid #8ebdd2;*/
+}
+
+.last .square {
+    width: 240px;
+    height: 80px;
+    background-color: #99cb50;
+    position: relative;
+    left: 50%;
+    margin-left: -120px;
+}
+
+/***********************************************************************************************************************
+ * estilos generales para todos
+ **********************************************************************************************************************/
+/**
+ *  reescritura del framework bootstrap
+ ****************************************/
+.nav-tabs > li > a {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 359px){
+
+    /*
+ *event1
+ ***********************************************************************************************************************
+    nota: ya este codigo existe en el css home pero como hay conflicto en algunos estilos y con el fin de tocar lo ya echo
+            entonces es mejor repetir una porcion de codigo y no hacer referencia a home  para la visualizacion de las paginas que cargan estos estilos
+*/
+    .event {
+        font-size: small;
+        width:250px;
+        position: relative;
+    }
+
+    .event .fa{
+        cursor: pointer;
+    }
+
+    .event .middle {
+        font-size: small;
+    }
+
+    .event .bottom .location p:first-child,
+    .event .bottom .capacity p:first-child {
+        font-size: small;
+    }
+
+    .event .bottom-bar {
+        height: 35px;
+    }
+
+    .event .ttip {
+        left: 55px;
+        width: 70%;
+    }
+
+    .event .ttip:before {
+        top: 40%;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 479px){
+
+    .container-fluid{
+
+        margin-top: 124%;
+    }
+
+    /**
+    * orgaanizador
+    **********************************************************************************************************************/
+    .organizador img{
+        width: 35%;
+        height: 35%;
+    }
+
+    /**
+    * evento: descripcion,condiciones, mapa
+    **********************************************************************************************************************/
+
+
+    .evento-descripcion p,
+    .evento-condiciones p{
+        font-size: 12px;
+    }
+
+    /**
+    * redes sociales
+    **********************************************************************************************************************/
+    .redes-sociales > a {
+        padding: 0 7px 0 7px;
+    }
+
+    /**
+    * redes sociales2
+    **********************************************************************************************************************/
+    .redes-sociales2 > a{
+        padding: 0 6px 0 6px;
+    }
+
+    /*
+*event1
+***********************************************************************************************************************
+
+ nota: ya este codigo existe en el css home pero como hay conflicto en algunos estilos y con el fin de tocar lo ya echo
+         entonces es mejor repetir una porcion de codigo y no hacer referencia a home  para la visualizacion de las paginas que cargan estos estilos
+*/
+    .event {
+        font-size: small;
+        width:250px;
+        position: relative;
+    }
+
+    .event .fa{
+        cursor: pointer;
+    }
+
+    .event .middle {
+        font-size: small;
+    }
+
+    .event .bottom .location p:first-child,
+    .event .bottom .capacity p:first-child {
+        font-size: small;
+    }
+
+    .event .bottom-bar {
+        height: 35px;
+    }
+
+    .event .ttip {
+        left: 55px;
+        width: 70%;
+    }
+
+    .event .ttip:before {
+        top: 40%;
+    }
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+    /**
+    * banner
+    ***********************************************************************************************************************/
+    .banner .titulo{
+        font-size: 26px;
+    }
+
+    .banner .lugar-costo{
+        top: 88%;
+        width: 100%;
+    }
+
+    .banner .lugar-costo > div > span:first-child{
+        font-size: 24px;
+    }
+
+    .banner .lugar-costo > div > span:last-child{
+        font-size: 16px;
+        margin-top: -8px;
+    }
+    .container-fluid{
+        margin-top: 122%;
+    }
+
+    /**
+    * asistir
+    **********************************************************************************************************************/
+    .asistir-tiempo > h6{
+        font-size: 14px;
+    }
+
+    .asistir-ok > a > h3{
+        font-size: 35px;
+    }
+
+    /**
+    * organizador
+    **********************************************************************************************************************/
+    .organizador img{
+        width: 30%;
+        height: 30%;
+        margin-left: -15px;
+    }
+
+    .organizador > div > h6:first-child{
+        margin-left: -40px;
+    }
+
+    .organizador-user{
+        margin-left: -20px;
+    }
+
+    .ec-stars-wrapper {
+        margin-left: -10px;
+    }
+
+    /* estrellas */
+    .ec-stars-wrapper a {
+        font-size: 25px;
+    }
+
+    /**
+     * slider de asistentes y invitados
+     ******************************************************************************************************************/
+    .asistentes,
+    .invitados,
+    .otherEvents{
+        padding: 0 15px 20px 15px;
+
+    }
+
+    /**
+     * evento: descripcion,condiciones, mapa
+     ******************************************************************************************************************/
+    .evento-descripcion p,
+    .evento-condiciones p{
+        font-size: 14px;
+    }
+
+    .evento-mapa img{
+        margin: 0 15px 10px 0;
+        width: 100%;
+    }
+
+    /**
+     * redes sociales
+     ******************************************************************************************************************/
+    .comparte{
+        font-size: 20px;
+    }
+
+
+
+    .redes-sociales a{
+        font-size: 27px;
+    }
+
+    .redes-sociales span{
+        margin: 0 15px 0 15px;
+        width: 40px;
+        height: 40px;
+    }
+
+    /**
+     * redes socioales 2
+     ******************************************************************************************************************/
+    .redes-sociales2 a{
+        font-size: 27px;
+    }
+
+    .redes-sociales2 span{
+        margin-right:15px;
+        width: 40px;
+        height: 40px;
+    }
+
+    /*
+*event1
+***********************************************************************************************************************
+
+ nota: ya este codigo existe en el css home pero como hay conflicto en algunos estilos y con el fin de tocar lo ya echo
+         entonces es mejor repetir una porcion de codigo y no hacer referencia a home  para la visualizacion de las paginas que cargan estos estilos
+*/
+
+    .event {
+        font-size: small;
+        width:250px;
+        position: relative;
+    }
+
+    .event .fa{
+        cursor: pointer;
+    }
+
+    .event .middle {
+        font-size: small;
+    }
+
+    .event .bottom .location p:first-child,
+    .event .bottom .capacity p:first-child {
+        font-size: small;
+    }
+
+    .event .bottom-bar {
+        height: 35px;
+    }
+
+    .event .ttip {
+        left: 55px;
+        width: 70%;
+    }
+
+    .event .ttip:before {
+        top: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    /**
+     * banner
+     ******************************************************************************************************************/
+    .banner .lugar-costo{
+        top: 92%;
+        width: 100%;
+    }
+
+    .banner-content{
+        padding: 0;
+        margin-top: 36px;
+        width: 100%;
+    }
+
+    .banner .titulo{
+        font-size: 36px;
+
+    }
+
+    .banner .lugar-costo > div > span:first-child{
+        font-size: 36px;
+    }
+
+    .banner .lugar-costo > div > span:last-child{
+        font-size: 20px;
+        margin-top: -15px;
+    }
+
+    .container-fluid{
+        margin-top: 121%;
+    }
+
+    /**
+    * asistir
+    *******************************************************************************************************************/
+    .asistir{
+        padding: 0 0 10px 0;
+    }
+
+    .asistir-tiempo > h6{
+        font-size: 16px;
+
+    }
+
+    .asistir-ok > a > h3{
+        font-size: 40px;
+    }
+
+    /**
+     * orgaanizador
+     ******************************************************************************************************************/
+    .organizador{
+        padding: 10px 0 10px 0;
+    }
+
+    .organizador img{
+        width: 30%;
+        height: 30%;
+        margin-left: -15px;
+    }
+
+    .organizador h6{
+        font-size: 20px;
+    }
+
+    .organizador > div > h6:nth-child(1){
+        margin-left: -70px;
+    }
+
+    .organizador-user{
+        margin-left: -50px;
+    }
+
+    .ec-stars-wrapper {
+        margin-left: -20px;
+    }
+
+    /* estrellas */
+    .ec-stars-wrapper a {
+        font-size: 30px;
+    }
+
+    /**
+     *asistentes y invitados
+     ******************************************************************************************************************/
+    .asistentesHeader h3,
+    .invitadosHeader h3{
+        font-size: 30px;
+        margin: 10px 0 0 0;
+    }
+
+    .asistentes,
+    .invitados,
+    .otherEvents{
+        padding: 0 15px 20px 15px;
+    }
+
+    .asistentes-content > li,
+    .invitados-content > li{
+        display: inline-block;
+        margin: 0 15px 0 0;
+    }
+
+    /**
+    * evento: descripcion,condiciones, mapa
+    *******************************************************************************************************************/
+    .evento-descripcion p,
+    .evento-condiciones p{
+        font-size: 16px;
+    }
+
+    .evento-mapa h6{
+        font-size: 17px;
+    }
+
+    .evento-mapa img{
+        margin: 0 15px 10px 0;
+        width: 100%;
+    }
+
+    /**
+     * redes sociales
+     ******************************************************************************************************************/
+    .comparte{
+        font-size: 20px;
+    }
+
+    .redes-sociales a{
+        font-size: 35px;
+    }
+
+    .redes-sociales span{
+        margin: 0 15px 0 15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /**
+    * redes socioales 2
+    *******************************************************************************************************************/
+    .redes-sociales2 a{
+        font-size: 35px;
+    }
+
+    .redes-sociales2 span{
+        margin-right:15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /**
+    *event1
+    ***********************************************************************************************************************
+
+    nota: ya este codigo existe en el css home pero como hay conflicto en algunos estilos y con el fin de tocar lo ya echo
+    entonces es mejor repetir una porcion de codigo y no hacer referencia a home  para la visualizacion de las paginas que cargan estos estilos
+    */
+
+    .event {
+        font-size: small;
+        width:250px;
+        position: relative;
+    }
+
+    .event .middle {
+        font-size: small;
+    }
+
+    .event .bottom .location p:first-child,
+    .event .bottom .capacity p:first-child {
+        font-size: small;
+    }
+
+    .event .bottom-bar {
+        height: 35px;
+    }
+
+    .event .ttip {
+        left: 55px;
+        width: 70%;
+    }
+
+    .event .ttip:before {
+        top: 40%;
+    }
+
+    /**
+     * ayuda
+     **********************************************************************************/
+    .last .words > div:not(:last-of-type) {
+        border-right: 3px solid #8ebdd2;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+    body{
+        background-color: #ffffff;
+    }
+
+    .container-fluid{
+        background-color: #ffffff;
+        margin-top: 0!important;
+
+
+    }
+
+    .container-fluid > div{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .topbar .hs{
+        display: inline;
+    }
+
+    /**
+     * evento: descripcion,condiciones, mapa
+     ******************************************************************************************************************/
+    .evento-descripcion p,
+    .evento-condiciones p{
+        font-size: 16px;
+    }
+
+    /**
+    * asistentes
+    ****************************************************************************************************/
+   /* .asistentesInvitados-md{
+        padding: 5px 15px 5px 15px;
+        background-color: #ffffff;
+    }*/
+
+    .cantidadAsistentes{
+        border-radius: 100%;
+        background-color: rgb(6, 126, 177);
+        color: #ffffff;
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .asistentesHeader-md,
+    .invitadosHeader-md{
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        /*background-color: rgb(172,172,172);*/
+        color: rgb(139,139,139);
+        font-weight: bold;
+        padding: 5px 10px 0 10px;
+    }
+
+    .asistentesHeader-md{
+        border-right: 1px solid darkgrey
+    }
+
+    .asistentesHeader-md h3,
+    .invitadosHeader-md h3{
+        margin-top: 5px;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+
+    .asistentes-md{
+        margin-top: 20px;
+        border-bottom: 1px solid #e2e2e2;
+        padding-bottom: 5px;
+        width: 100%;
+        height: 57px;
+    }
+
+    .asistentes-md img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .asistentes-md > div{
+        float: left;
+    }
+
+    .asistentes-md > div:nth-child(1){
+        width: 12.59%;
+        height: 100%;
+    }
+
+    .asistentes-md > div:nth-child(2){
+        padding: 0 0 0 10px;
+    }
+
+    .asistentes-md > div:nth-child(3){
+        padding: 10px 0 0 10px;
+    }
+
+    .asistentes-md > div:nth-child(2){
+        /*background-color: red;*/
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(6, 126, 177);
+        height: 50%;
+        width: 87%;
+    }
+
+    .asistentes-md > div:nth-child(3){
+        font-size: 12px;
+        color: #808080;
+        height: 50%;
+        width: 87%;
+    }
+
+    .asistentes-md > div:nth-child(3) span,
+    .asistentes-md > div:nth-child(3) div{
+        display: inline-block;
+    }
+
+    .asistentes-md .numero{
+        margin-right: 4px;
+    }
+
+    .asistentes-md .descripcion{
+        margin-right: 10px;
+    }
+
+    .evento-mapa-md{
+        background-color: #ffffff;
+    }
+
+    .evento-mapa-md h4{
+        margin-bottom: 13px;
+    }
+
+    /**
+    * orgaanizador
+    ******************************************************************************************************/
+    .organizador{
+        padding: 20px 0;
+        background-color: #e8e8e8;
+    }
+
+    .organizador h6{
+        font-size: 20px;
+    }
+
+    .organizador img{
+        width: 35%;
+        height: 35%;
+        margin-left: 50px;
+    }
+
+    .organizador > div > h6:nth-child(1){
+        margin-left: -70px;
+    }
+
+    .organizador-user{
+        margin-left: -50px;
+    }
+
+    .ec-stars-wrapper {
+        margin-left: -40px;
+    }
+
+    /* estrellas */
+    .ec-stars-wrapper a {
+        font-size: 30px;
+    }
+
+    .comparte,
+    .ir-reclamar{
+        background-color: #e8e8e8;
+    }
+
+    /**
+     * redes sociales
+     ******************************************************************************************************************/
+    .comparte{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .redes-sociales a{
+        font-size: 35px;
+    }
+
+    .redes-sociales span{
+        margin: 0 15px 0 15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .ir-reclamar{
+        margin-top: 20px;
+    }
+
+    /**
+    * redes socioales 2
+    *******************************************************************************************************************/
+    .redes-sociales2 a{
+        font-size: 35px;
+    }
+
+    .redes-sociales2 span{
+        margin-right:15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /**
+  * ayuda
+  **********************************************************************************/
+    .chat{
+        margin-top: 20px;
+    }
+
+    .last .words > div:not(:last-of-type) {
+        border-right: 3px solid #8ebdd2;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+
+    body{
+        background-color: #ffffff;
+    }
+
+    .container-fluid{
+        background-color: #ffffff;
+        margin-top: 0!important;
+
+    }
+
+    .container-fluid > div > div{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .topbar .hs{
+        display: inline;
+    }
+
+
+    /**
+     * evento: descripcion,condiciones, mapa
+     ******************************************************************************************************************/
+    .evento-descripcion p,
+    .evento-condiciones p{
+        font-size: 16px;
+    }
+
+    /**
+    * asistentes
+    ****************************************************************************************************/
+    .asistentesInvitados-md{
+        padding: 5px 15px 5px 15px;
+        background-color: #ffffff;
+    }
+
+    .cantidadAsistentes{
+        border-radius: 100%;
+        background-color: rgb(6, 126, 177);
+        color: #ffffff;
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .asistentesHeader-md,
+    .invitadosHeader-md{
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        /*background-color: rgb(172,172,172);*/
+        color: rgb(139,139,139);
+        font-weight: bold;
+        padding: 5px 10px 0 10px;
+    }
+
+    .asistentesHeader-md{
+        border-right: 1px solid darkgrey
+    }
+
+    .asistentesHeader-md h3,
+    .invitadosHeader-md h3{
+        margin-top: 5px;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+
+    .asistentes-md{
+        margin-top: 20px;
+        border-bottom: 1px solid #e2e2e2;
+        padding-bottom: 5px;
+        width: 100%;
+        height: 57px;
+    }
+
+    .asistentes-md img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .asistentes-md > div{
+        float: left;
+    }
+
+    .asistentes-md > div:nth-child(1){
+        width: 12.59%;
+        height: 100%;
+    }
+
+    .asistentes-md > div:nth-child(2){
+        padding: 0 0 0 10px;
+    }
+
+    .asistentes-md > div:nth-child(3){
+        padding: 10px 0 0 10px;
+    }
+
+    .asistentes-md > div:nth-child(2){
+        /*background-color: red;*/
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(6, 126, 177);
+        height: 50%;
+        width: 87%;
+    }
+
+    .asistentes-md > div:nth-child(3){
+        font-size: 12px;
+        color: #808080;
+        height: 50%;
+        width: 87%;
+    }
+
+    .asistentes-md > div:nth-child(3) span,
+    .asistentes-md > div:nth-child(3) div{
+        display: inline-block;
+    }
+
+    .asistentes-md .numero{
+        margin-right: 4px;
+    }
+
+    .asistentes-md .descripcion{
+        margin-right: 10px;
+    }
+
+    .evento-mapa-md{
+        background-color: #ffffff;
+    }
+
+    .evento-mapa-md h4{
+        margin-bottom: 13px;
+    }
+
+    /**
+    * orgaanizador
+    ******************************************************************************************************/
+    .organizador{
+        padding: 20px 0;
+        background-color: #e8e8e8;
+    }
+
+    .organizador h6{
+        font-size: 20px;
+    }
+
+    .organizador img{
+        width: 35%;
+        height: 35%;
+        margin-left: 28%;
+    }
+
+    .organizador > div > h6:nth-child(1){
+        margin-left: -70px;
+    }
+
+    .organizador-user{
+        margin-left: -50px;
+    }
+
+    .ec-stars-wrapper {
+        margin-left: -30px;
+    }
+
+    /* estrellas */
+    .ec-stars-wrapper a {
+        font-size: 35px;
+    }
+
+    .comparte,
+    .ir-reclamar{
+        background-color: #e8e8e8;
+    }
+
+    /**
+     * redes sociales
+     ******************************************************************************************************************/
+    .comparte{
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding-top: 15px;
+    }
+
+
+
+    .redes-sociales a{
+        font-size: 35px;
+    }
+
+    .redes-sociales span{
+        margin: 0 15px 0 15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .ir-reclamar{
+        margin-top: 20px;
+    }
+
+    /**
+    * redes socioales 2
+    *******************************************************************************************************************/
+    .redes-sociales2 a{
+        font-size: 35px;
+    }
+
+    .redes-sociales2 span{
+        margin-right:15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /**
+  * ayuda
+  **********************************************************************************/
+    .chat{
+        margin-top: 20px;
+    }
+
+    .last .words > div:not(:last-of-type) {
+        border-right: 3px solid #8ebdd2;
+    }
+
+}
+
+
+.img-of-event{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
+/** reescritura **/
+/*.swiper-slide{
+    height: 90px;
+}*/
+
+.gallery-thumbs{
+    height: 90px;
+}
+
+.swiper-slide .shadow{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.swiper-slide-active .shadow{
+    background-color: transparent;
+}
+
+.evento-descripcion{
+    margin-top:80px;
+}
+
+
+
+
+/*arreglo por reescritura ***********/
+/*.otherEvents2-viewer > div{
+    width: 262px;
+    height: auto;
+}*/
+
+/*.otherViewer2-content .otherEvents2-viewer > div{
+    width: 20%;
+    height: auto;
+}
+.otherViewer2-content .otherEvents2-viewer{}
+
+
+.otherViewer2-content div.col-md-1{
+	width:2%;
+
+}
+
+.otherViewer2-content div.col-md-1 span{
+	margin-top:90px;
+}
+
+.otherViewer2-content {
+
+}*/
+
+@media screen and (min-width:992px){
+    .otherViewer2-content .col-md-1{
+        padding-left:0;
+        padding-right: 0;
+    }
+    .otherViewer2-content .col-md-4{
+        width: 220px;
+    }
+
+    .otherViewer2-content{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media screen and (min-width:1200px){
+    .otherViewer2-content .col-md-1{
+        padding-left:0;
+        padding-right: 0;
+    }
+.otherViewer2-content .col-md-4{
+    width: 290px;
+}
+
+    .otherViewer2-content{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+

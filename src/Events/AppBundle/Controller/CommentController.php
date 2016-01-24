@@ -113,7 +113,7 @@ class CommentController extends Controller
 
         $deleteForm = $this->createDeleteForm($id);
 
-        return $this->render('AppBundle:Comment:show.html.twig', array(
+        return $this->render('AppBundle:Comment:event.html.twig', array(
             'entity'      => $entity,
             'delete_form' => $deleteForm->createView(),
         ));

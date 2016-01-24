@@ -13,3 +13,7 @@ app_homepage:
 app_user:
     resource: "@AppBundle/Resources/config/user/routing.yml"
     prefix:   /user
+
+app_default:
+    resource: "@AppBundle/Resources/config/routing/default.yml"
+    prefix:   /default

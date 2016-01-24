@@ -49,9 +49,9 @@ var Events = (function () {
                     isOpen = !isOpen;
                 },
                 locate = function () {
-                    var offset = $window.scrollTop(),
-                        container = $morphSearch[0].getBoundingClientRect(),
-                        content = $('.morphsearch-content')[0].getBoundingClientRect();
+                    var offset = $window.scrollTop();
+                        /*container = $morphSearch[0].getBoundingClientRect(),*/
+                        /*content = $('.morphsearch-content')[0].getBoundingClientRect();*/
                     if (!isOpen) $morphSearch.css('top', offset);
                     else {
                         if (container.top > 10 || content.bottom < $window.height()) {
@@ -89,3 +89,9 @@ var Events = (function () {
     }
 
 })();
+
+$(document).ready(function(){
+
+    // fade in .navbar
+
+});
