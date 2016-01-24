@@ -10,3 +10,4 @@
 web/public/video
 composer.phar
 vendor
+app/data/data.db3
