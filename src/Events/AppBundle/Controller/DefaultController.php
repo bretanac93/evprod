@@ -42,6 +42,6 @@ class DefaultController extends Controller
     }
 
     public function usuarioAction(){
-        return $this->render('AppBundle:Default:usuario.html.twig');
+        return $this->render('UserBundle:Profile:show.html.twig');
     }
 }
